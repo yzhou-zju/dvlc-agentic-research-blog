@@ -18,17 +18,17 @@ const mediaCatalog={
       "en": [
         "GPT-6 Astra · execution",
         "GPT-6 Astra medium · 738.2 s · completed",
-        "The original floor maps and task graph remain above four enlarged third-person cameras. Pink mini-maps and action descriptions below are replaced by recorded shared subtasks. No simulation rerun."
+        "The archived floor maps and task graph remain above four enlarged third-person cameras. Robot icons in the colored shared maps are doubled; recorded shared subtasks replace the lower mini-maps and action descriptions. No simulation rerun."
       ],
       "zh": [
         "GPT-6 Astra 执行实例",
         "GPT-6 Astra medium · 738.2 秒 · 已完成",
-        "保留原片上方的楼层俯视图与任务关系图；下方放大四机第三人称画面，移除粉色小地图和动作描述，改为展示录制时的共享子任务；未重跑仿真。"
+        "保留历史录像的楼层俯视图与任务关系图，地图机器人图标放大两倍；下方放大四机第三人称画面，展示录制时的共享子任务；未重跑仿真。"
       ],
-      "src": "assets/archive/gpt6-semantic-reframed-en-3x.mp4?v=4",
-      "poster": "assets/archive/gpt6-semantic-reframed-en-3x.jpg?v=4",
-      "src_zh": "assets/archive/gpt6-semantic-reframed-zh-3x.mp4?v=4",
-      "poster_zh": "assets/archive/gpt6-semantic-reframed-zh-3x.jpg?v=4",
+      "src": "assets/archive/gpt6-semantic-reframed-en-3x.mp4?v=5",
+      "poster": "assets/archive/gpt6-semantic-reframed-en-3x.jpg?v=5",
+      "src_zh": "assets/archive/gpt6-semantic-reframed-zh-3x.mp4?v=5",
+      "poster_zh": "assets/archive/gpt6-semantic-reframed-zh-3x.jpg?v=5",
       "original_src": "assets/archive/gpt6-semantic-swarm-3x.mp4"
     },
     "gpt56-visual": {

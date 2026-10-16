@@ -7,20 +7,20 @@
   "archive_path": "assets/archive/gpt6-semantic-swarm-3x.mp4",
   "remasters": {
     "assets/archive/gpt6-semantic-reframed-en-3x.mp4": {
-      "bytes": 7535563,
-      "sha256": "c9411eda67b091361b5a982e7297a0d17781bcf51039d77659f440474dd1ec49"
+      "bytes": 9164243,
+      "sha256": "79c23142604b6f6790aa887dc46399bfb3ef5c5822abff00c7bfab894d8e0864"
     },
     "assets/archive/gpt6-semantic-reframed-en-3x.jpg": {
-      "bytes": 126903,
-      "sha256": "abc1ff52fd5790c194a461960cafe747e20a22047d754935f4cd3cd61e74d687"
+      "bytes": 120680,
+      "sha256": "f56bcef7b69a5a8bf43a4a7f08d64cd325b1416ca30d28919acafd38d669a5d9"
     },
     "assets/archive/gpt6-semantic-reframed-zh-3x.mp4": {
-      "bytes": 7505529,
-      "sha256": "f77073a24a4868d8356093022f18bde872a9638ef8b7dffb343d50b2f33d1346"
+      "bytes": 9131465,
+      "sha256": "ef9200b5d439daf072be5f1a813127cf0db1f2457afdcdf7719bb1aa76616c03"
     },
     "assets/archive/gpt6-semantic-reframed-zh-3x.jpg": {
-      "bytes": 124790,
-      "sha256": "eed1202e6acef8c21f438cba8c053efb84a5a8a5a32548e43fc38c67660da426"
+      "bytes": 116934,
+      "sha256": "62536bb0dd4bf98871397961524661a35c4cb0275c1a840865d7f1c0fc786d3f"
     }
   },
   "source_camera_crops": [
@@ -53,7 +53,7 @@
       "height": 168
     }
   ],
-  "composition": "The original floor maps, task graph, and shared-plan panel are preserved in the upper 815 source pixels. Four source third-person camera crops are enlarged to 440x247 in a new lower strip; pink mini-maps and per-robot action descriptions are omitted. A shared-subtask strip below is sampled from recorded states.jsonl at each playback second. The final bottom padding keeps browser video controls clear of the subtitles.",
+  "composition": "The archived floor maps, task graph, and shared-plan panel remain in the upper 815 source pixels; only the robot marker symbols on the colored maps are doubled in size for readability. Four source third-person camera crops are enlarged to 440x247 in a new lower strip; pink mini-maps and per-robot action descriptions are omitted. A shared-subtask strip below is sampled from recorded states.jsonl at each playback second. The final bottom padding keeps browser video controls clear of the subtitles.",
   "video": "1600x1164, 12 fps output, complete 3x source playback (247.36 seconds); no runtime replay. Bottom padding prevents browser controls from obscuring shared subtasks.",
   "original_unchanged": true,
   "unchanged_main_film_restored": {
@@ -78,5 +78,22 @@
       "restored_from_commit": "c7d93db"
     }
   },
-  "placement": "The reframed complete recording is shown in the Complete cooperation window section. The separate four-camera experiment film retains its preceding version. The original complete window remains available as a separate link."
+  "placement": "The reframed complete recording is shown in the Complete cooperation window section. The separate four-camera experiment film retains its preceding version. The original complete window remains available as a separate link.",
+  "map_marker_edit": {
+    "method": "Computer-vision matching of the original robot icon shapes in the archived upper map, followed by an editorial overlay. Four robot symbols are 44 px wide instead of 22 px in the 1600 px remaster; the historical robot motion remains unchanged. The untouched original recording is linked separately.",
+    "sampling_fps": 5,
+    "source_video_fps": 25,
+    "detected_samples_by_robot": [
+      1225,
+      1192,
+      1225,
+      1199
+    ],
+    "missing_samples_by_robot": [
+      12,
+      45,
+      12,
+      38
+    ]
+  }
 }

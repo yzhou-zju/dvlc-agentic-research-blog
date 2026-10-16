@@ -1,0 +1,17 @@
+{
+  "method": "Computer-vision matching of the original robot icon shapes in the archived upper map, followed by an editorial overlay. Four robot symbols are 44 px wide instead of 22 px in the 1600 px remaster; the historical robot motion remains unchanged. The untouched original recording is linked separately.",
+  "sampling_fps": 5,
+  "source_video_fps": 25,
+  "detected_samples_by_robot": [
+    1225,
+    1192,
+    1225,
+    1199
+  ],
+  "missing_samples_by_robot": [
+    12,
+    45,
+    12,
+    38
+  ]
+}

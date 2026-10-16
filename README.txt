@@ -25,7 +25,8 @@ Report revision:
 - Four-stage framework evolution with GPT-6 Astra engineering roles, validation, retained changes and reversions.
 - Original D-VLC Figures 1, 2 and 4 cropped directly from the paper PDF, with attribution under CC BY 4.0; assets/paper/manifest.json records provenance.
 - Six annotated local event stills and continuous 3x clips in assets/focus/, featuring top-down maps and robot cameras. Event log timestamps and crop coordinates are provided.
-- The event stills are the default highlight view. A control switches to local video; full recordings remain unchanged.
+- Section 04 opens with the humanoid video and adds directly playable R0, R1, and R2 excerpts, each with a direct MP4 link. The original recordings remain available separately.
+- In the default complete cooperation-window remaster, the robot symbols on the colored shared map are doubled from approximately 22 to 44 pixels. The overlay follows icon positions detected in archived frames; no robot motion or task state was changed. See assets/gpt6-camera-remaster.json and assets/map-icon-tracking.json.
 
 Current presentation:
 - Restrained technical-report layout with no images in the research background. Original D-VLC figures are in the source appendix.
