@@ -30,5 +30,5 @@ Report revision:
 Current presentation:
 - Restrained technical-report layout with no images in the research background. Original D-VLC figures are in the source appendix.
 - Concrete R0-R3 code-and-evaluation iteration, including the extended completion criterion and rollback evidence; see assets/iteration-evidence.json.
-- GPT-6 Astra is the main presentation. The four actual historical GPT-6 runs are reported together, including the incomplete run.
+- GPT-6 Astra is the main presentation. The four actual historical GPT-6 Astra runs are reported together, including the incomplete run.
 - GPT-5.6 measurements and recordings remain under historical disclosures with their original model attribution.

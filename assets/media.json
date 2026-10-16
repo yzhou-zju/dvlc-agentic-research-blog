@@ -14,12 +14,12 @@
   },
   {
     "id": "gpt6-semantic",
-    "title": "GPT-6 coordinating the robot team.",
+    "title": "GPT-6 Astra coordinating the robot team.",
     "model": "GPT-6 Astra / medium",
     "duration": "738.2 s",
     "condition": "Visibility-gated simulator semantics | No online image recognition",
     "notes": [
-      "A successful historical GPT-6 runtime example.",
+      "A successful historical GPT-6 Astra runtime example.",
       "Object identity and position come from the simulator, subject to visibility.",
       "Selected success; the four-run set also contains one incomplete run."
     ],
