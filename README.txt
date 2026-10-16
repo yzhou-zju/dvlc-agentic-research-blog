@@ -30,5 +30,9 @@ Report revision:
 Current presentation:
 - Restrained technical-report layout with no images in the research background. Original D-VLC figures are in the source appendix.
 - Concrete R0-R3 code-and-evaluation iteration, including the extended completion criterion and rollback evidence; see assets/iteration-evidence.json.
-- GPT-6 Astra is the main presentation. The four actual historical GPT-6 Astra runs are reported together, including the incomplete run.
+- GPT-6 Astra is the main video example. The four historical run outcomes remain in assets/evidence.json; the dedicated runtime-results section is removed.
 - GPT-5.6 measurements and recordings remain under historical disclosures with their original model attribution.
+
+Latest architecture revision:
+- The framework diagram shows an execution loop feeding evidence into an RSI-inspired research loop, then a revised system producing the next run.
+- The dedicated GPT-6 Astra historical-results section is removed from both language editions; source metrics remain in the evidence manifest.
