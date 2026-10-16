@@ -1,0 +1,52 @@
+[
+  {
+    "id": "gpt56-semantic",
+    "file": "assets/archive/gpt56-semantic-swarm-3x.mp4",
+    "source_filename": "swarm_cooperation_window_3x.mp4",
+    "sha256": "01db7f0e0fc7fb62769670b6bb84fb58e85d290f3ce3059b84b839cd53aba2a0",
+    "bytes": 15966091,
+    "playback": "3x, unchanged archived recording",
+    "interface": "Original Chinese interface"
+  },
+  {
+    "id": "gpt6-semantic",
+    "file": "assets/archive/gpt6-semantic-swarm-3x.mp4",
+    "source_filename": "swarm_cooperation_window_3x.mp4",
+    "sha256": "a78221b6409d5f740a2e6204bd9205a0eadcc2772a6183280691ebf3ee7d54e4",
+    "bytes": 19383346,
+    "playback": "3x, unchanged archived recording",
+    "interface": "Original Chinese interface"
+  },
+  {
+    "id": "gpt56-visual",
+    "file": "assets/archive/gpt56-visual-swarm-3x.mp4",
+    "source_filename": "swarm_cooperation_window_3x.mp4",
+    "sha256": "ac7de25826086037ded429cfd97393c67910e53293b325de17bacf7a8da9378d",
+    "bytes": 19094751,
+    "playback": "3x, unchanged archived recording",
+    "interface": "Original Chinese interface"
+  },
+  {
+    "id": "known-state",
+    "file": "assets/archive/known-state-swarm-3x.mp4",
+    "source_filename": "swarm_cooperation_window_3x.mp4",
+    "sha256": "94bd17c42ae4698b001621dfd5ac981513886044c41b907840f4b47b60205196",
+    "bytes": 7006476,
+    "playback": "3x, unchanged archived recording",
+    "interface": "Original Chinese interface"
+  },
+  {
+    "id": "predictive",
+    "file": "assets/archive/predictive-swarm-3x.mp4",
+    "source_filename": "swarm_cooperation_window_预测取送加速_3倍速.mp4",
+    "sha256": "cf4edfc0327594fa1cd098276f0a7dc6187c2832cb88b70a106c15da4063b5db",
+    "bytes": 17303024,
+    "playback": "3x, unchanged archived recording",
+    "interface": "Original Chinese interface",
+    "episode_id": "079736b80cec4a3e88dbe8a6f36957ad",
+    "elapsed_s": 896.0954458713531,
+    "task_model": "Qwen3.8-Flash-Next",
+    "action_model": "Qwen3.5-4B",
+    "caveat": "New predictive pickup switching triggered zero times in this full run. It is evidence of full visual execution, not a causal speedup from predictive pickup."
+  }
+]

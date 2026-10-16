@@ -1,15 +1,21 @@
-FROM D-VLC TO AGENT-BUILT ROBOT TEAMS
+D-VLC research blog — English and Chinese editions
 
-GitHub Pages edition. This is a plain static website with no login requirement.
+Public website: https://yzhou-zju.github.io/dvlc-agentic-research-blog/
+Chinese edition: https://yzhou-zju.github.io/dvlc-agentic-research-blog/zh.html
 
-Publish this folder as a new public GitHub repository, then select:
-Settings > Pages > Build and deployment > Deploy from a branch > main > /(root).
-The empty .nojekyll file disables Jekyll. No build command is required.
+Buildless static GitHub Pages site. Publish the repository root from main.
+index.html is English; zh.html is Chinese. The header switches languages.
 
-All asset paths are relative, so project-site URLs are supported.
-index.html, style.css, app.js and assets/ are the complete website.
-The four English MP4 videos use existing archived recordings, with labeled 3x playback.
-No robotics or model experiments were rerun for this website.
+Media:
+- Four English camera remasters in assets/.
+- Four corresponding Chinese camera remasters in assets/zh/.
+- Five byte-identical original 3x cooperation-window recordings in assets/archive/.
+- Six continuous 3x highlights in assets/highlights/.
+- Archive hashes and highlight timestamps are provided in each folder's manifest.json.
 
-The source robot project, API credentials and private hosting configuration are excluded.
-See assets/evidence.json for experiment conditions and source hashes.
+The original videos preserve their Chinese interface. Recognition examples come from the predictive-preparation full visual run; semantic-observation examples are explicitly identified. These are archived experiments, not new runs. The predictive pickup switch triggered zero times in the 896.1-second full run; its speed cannot be attributed to that feature.
+
+No robot experiments, Unity instances, or model calls were started to build this website.
+No credentials, model weights, raw inference requests, or private local paths are included.
+
+For a local preview, serve this directory with any static HTTP server. A server supporting HTTP byte-range requests is required for reliable video seeking.

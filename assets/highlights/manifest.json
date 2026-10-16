@@ -1,0 +1,120 @@
+{
+  "protocol": "Continuous excerpts of archived recordings or English camera remasters, as specified per clip. Playback remains 3x. Event times are seconds since mission start. No new simulator or model run, and no invented detections.",
+  "clips": [
+    {
+      "id": "parallel-repair",
+      "run": "gpt56-semantic",
+      "start_elapsed": 390,
+      "end_elapsed": 446,
+      "robots": [
+        1,
+        3
+      ],
+      "claim": "R1 inserts the repair key and opens the service compartment while R3 fetches module M-23.",
+      "events": [
+        392.973,
+        394.043,
+        422.45,
+        430.471,
+        438.092,
+        443.861
+      ],
+      "start_video_s": 129.72363,
+      "duration_video_s": 18.666666666666668
+    },
+    {
+      "id": "power-and-loading",
+      "run": "gpt56-semantic",
+      "start_elapsed": 490,
+      "end_elapsed": 521,
+      "robots": [
+        1,
+        2,
+        3
+      ],
+      "claim": "R1 connects power while R2 loads the blank. R3 subsequently authorizes machining.",
+      "events": [
+        491.956,
+        492.403,
+        501.873,
+        503.119,
+        503.928,
+        510.213,
+        517.116
+      ],
+      "start_video_s": 163.056963,
+      "duration_video_s": 10.333333333333334
+    },
+    {
+      "id": "humanoid-delivery",
+      "run": "gpt6-semantic",
+      "start_elapsed": 574,
+      "end_elapsed": 659,
+      "robots": [
+        3
+      ],
+      "claim": "R3 picks up the finished key and delivers it. This excerpt shows ground-floor transport, not a cross-floor delivery.",
+      "events": [
+        574.74,
+        595.811,
+        596.51,
+        656.155
+      ],
+      "start_video_s": 191.045357,
+      "duration_video_s": 28.333333333333332
+    },
+    {
+      "id": "close-pickup",
+      "run": "gpt56-visual",
+      "start_elapsed": 889,
+      "end_elapsed": 909,
+      "robots": [
+        2
+      ],
+      "claim": "After inspection and local product recognition, R2 picks up the finished key and starts the delivery action. Delivery is not yet complete in this clip.",
+      "events": [
+        892.542,
+        897.016,
+        899.364
+      ],
+      "start_video_s": 295.95519,
+      "duration_video_s": 6.666666666666667
+    },
+    {
+      "id": "recognition-authorization",
+      "start_elapsed": 578,
+      "end_elapsed": 600,
+      "robots": [
+        0
+      ],
+      "claim": "R0 confirms the authorization box upstairs at 589.299 s; routine discovery is disabled after the required static resources are localized. Original recorded interface, no added detection boxes.",
+      "events": [
+        589.299,
+        589.324
+      ],
+      "run": "predictive",
+      "start_video_s": 192.361211,
+      "duration_video_s": 7.333333333333333,
+      "visual_source": "Original swarm_cooperation_window, continuous excerpt, no added overlay"
+    },
+    {
+      "id": "recognition-product",
+      "start_elapsed": 804,
+      "end_elapsed": 827,
+      "robots": [
+        2
+      ],
+      "claim": "After processing and inspection, the new finished workpiece is discovered at 817.047 s and picked up at 820.587 s. Local recognition remains available after routine discovery stops.",
+      "events": [
+        808.579,
+        812.457,
+        817.047,
+        820.587
+      ],
+      "run": "predictive",
+      "start_video_s": 267.694545,
+      "duration_video_s": 7.666666666666667,
+      "visual_source": "Original swarm_cooperation_window, continuous excerpt, no added overlay"
+    }
+  ]
+}

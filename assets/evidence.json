@@ -169,7 +169,10 @@
     "playback": "3x as in the archived source",
     "camera_views": "Cropped, resized original footage; camera views sampled at 12 fps, output encoded at 25 fps. No new simulation.",
     "status": "English labels from the corresponding archived telemetry, sampled once per video second.",
-    "added_detections": false
+    "added_detections": false,
+    "chinese_edition": "Chinese labels from the same recorded telemetry; no simulator or model reruns.",
+    "original_window_recordings": "Five unmodified original Chinese-interface 3x recordings. SHA256 and protocol: assets/archive/manifest.json",
+    "highlight_clips": "Six continuous 3x excerpts: two original-window visual-recognition clips and four English camera-remaster clips. Event times and offsets: assets/highlights/manifest.json"
   },
   "source_documents": [
     {
