@@ -45,7 +45,7 @@
     ],
     "protocol": "full vision",
     "alterations": "Crop, resize, layout, English editorial labels, and mission timer only; no new object detections or robot trajectories.",
-    "video_sha256": "bbae6f8a7cb63dfe0f68ccd21fa518cf208eee0b92542f3e157500f2986fe6d1"
+    "video_sha256": "8b52d58fe1f169dd566afbe7b57c7e8806912fe7e78d9fe71e9e95f6a908cc4e"
   },
   {
     "id": "recognition-product",
@@ -93,7 +93,7 @@
     ],
     "protocol": "full vision",
     "alterations": "Crop, resize, layout, English editorial labels, and mission timer only; no new object detections or robot trajectories.",
-    "video_sha256": "5835d59bf438e36bef3d1a23004664401304cf86901dea69a51392d276e0e4aa"
+    "video_sha256": "b3481427a7b8644c97376ea04dc8602216e61fe13fec9e08c4be9ea3a9da833b"
   },
   {
     "id": "parallel-repair",
@@ -141,7 +141,7 @@
     ],
     "protocol": "simulator semantics",
     "alterations": "Crop, resize, layout, English editorial labels, and mission timer only; no new object detections or robot trajectories.",
-    "video_sha256": "bc640286dcb2a48735e54a848e0c9fdf1a5d305708da1634dc5bba62b83fbb46"
+    "video_sha256": "0546906483b11bcb2534d90f65d349c14078060cd33e190be0815296c7dbb233"
   },
   {
     "id": "power-and-loading",
@@ -189,7 +189,7 @@
     ],
     "protocol": "simulator semantics",
     "alterations": "Crop, resize, layout, English editorial labels, and mission timer only; no new object detections or robot trajectories.",
-    "video_sha256": "383b193cc5e3a004fef3e2223f7009f3bb4f7d2c9862629ad84d01d8636c2002"
+    "video_sha256": "3246a1468d9b6ec052a39eaff93fc74ad3b1b0cd8eb3845a9ee79c3cbb9400ee"
   },
   {
     "id": "humanoid-delivery",
@@ -237,7 +237,7 @@
     ],
     "protocol": "simulator semantics",
     "alterations": "Crop, resize, layout, English editorial labels, and mission timer only; no new object detections or robot trajectories.",
-    "video_sha256": "3a68c25c22f9ae20ad38bf5d6ecae571146719e9dcebec282967b37d0754fe84"
+    "video_sha256": "48db4235073a535379d1e440daf94b125c079e4b3df8e10c1a13b19106ef6f0d"
   },
   {
     "id": "close-pickup",
@@ -285,6 +285,6 @@
     ],
     "protocol": "full vision",
     "alterations": "Crop, resize, layout, English editorial labels, and mission timer only; no new object detections or robot trajectories.",
-    "video_sha256": "a73361c026149c4ad90503ff8c8aa3cb09edf84466bc0722b2fc4f8f57ae2cf9"
+    "video_sha256": "f80c0c4c3f329128cdbc19822993f2d71ce1af109d104d455bd50ad741828976"
   }
 ]
