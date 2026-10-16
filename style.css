@@ -31,3 +31,7 @@
 @media(max-width:760px){.system-cycle>figcaption{padding:16px}.cycle-stage{padding:16px}.cycle-research{padding-left:12px}.cycle-steps,.cycle-next .cycle-steps{display:flex;flex-direction:column;gap:3px}.cycle-step{min-height:auto;padding:11px 12px}.cycle-arrow{height:19px;transform:rotate(90deg)}.cycle-return{font-size:10px}.cycle-transfer{font-size:10px}.cycle-recurrence{font-size:11px}.system-cycle>.figure-note{padding:14px 16px}}
 
 #experiment-video{aspect-ratio:40/27}
+
+.archive-feature.reframed video{aspect-ratio:400/291}
+.archive-feature figcaption a+a{margin-left:22px}
+.archive-feature [hidden]{display:none!important}

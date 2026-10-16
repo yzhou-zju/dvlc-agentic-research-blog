@@ -42,11 +42,22 @@
  const archive=document.getElementById('archive-video');
  const selectArchive=(id,time=0)=>{
   const d=mediaCatalog.archives[id];archive.pause();
+  archive.closest('figure').classList.toggle('reframed',Boolean(d.original_src));
   document.querySelector(`[data-archive="${id}"]`)?.closest('details')?.setAttribute('open','');
   archive.onloadedmetadata=()=>{archive.currentTime=Math.min(time,Math.max(0,archive.duration-.1));};
-  archive.poster=d.poster;archive.src=d.src;archive.load();
+  const src=language==='zh'&&d.src_zh?d.src_zh:d.src;
+  archive.poster=language==='zh'&&d.poster_zh?d.poster_zh:d.poster;archive.src=src;archive.load();
+  archive.setAttribute('aria-label',d.original_src?(language==='zh'?'完整协作窗口重排版':'Reframed complete cooperation window'):(language==='zh'?'历史原始录像':'Original archived recording'));
   document.querySelectorAll('[data-archive]').forEach(b=>{const selected=b.dataset.archive===id;b.classList.toggle('active',selected);b.setAttribute('aria-pressed',String(selected));});
-  document.getElementById('archive-title').textContent=d[language][1];document.getElementById('archive-description').textContent=language==='zh'?'原片未改动；条件见实验数据。':'Original unchanged; conditions in evidence manifest.';document.getElementById('archive-download').href=d.src;
+  document.getElementById('archive-title').textContent=d[language][1];
+  document.getElementById('archive-description').textContent=d.original_src?d[language][2]:(language==='zh'?'原片未改动；条件见实验数据。':'Original unchanged; conditions in evidence manifest.');
+  const download=document.getElementById('archive-download');
+  download.href=src;
+  download.textContent=d.original_src?(language==='zh'?'下载重排版完整录像 ↓':'Download reframed complete recording ↓'):(language==='zh'?'下载完整原录像 ↓':'Download the original recording ↓');
+  const originalLink=document.getElementById('archive-original');
+  originalLink.hidden=!d.original_src;
+  if(d.original_src)originalLink.href=d.original_src;
+  document.getElementById('archive-tag').textContent=d.original_src?(language==='zh'?'完整协作窗口 · 重排版 · 3×':'COMPLETE COOPERATION WINDOW · REFRAMED · 3×'):(language==='zh'?'历史原片 · 3×':'ORIGINAL RECORDING · 3×');
  };
  document.querySelectorAll('[data-archive]').forEach(b=>b.addEventListener('click',()=>selectArchive(b.dataset.archive)));
  document.getElementById('highlight-context').addEventListener('click',e=>{

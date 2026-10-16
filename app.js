@@ -5,7 +5,7 @@ const demos={
  'known-state':{tag:'RESTORED CHECKPOINT',title:'Qwen3.8 Flash Next BF16 · 315.6 seconds remaining · completed',description:'Twelve known objects and a full map; remaining time only.'}
 };
 document.querySelectorAll('[data-demo]').forEach(button=>button.addEventListener('click',()=>{
- const id=button.dataset.demo,data=demos[id],v=document.querySelector('#experiment-video'),version=id==='gpt6-semantic'?'?v=2':'';v.pause();v.poster=`assets/${id}.jpg${version}`;v.src=`assets/${id}.mp4${version}`;v.load();
+ const id=button.dataset.demo,data=demos[id],v=document.querySelector('#experiment-video'),version=id==='gpt6-semantic'?'?v=3':'';v.pause();v.poster=`assets/${id}.jpg${version}`;v.src=`assets/${id}.mp4${version}`;v.load();
  document.querySelectorAll('[data-demo]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});
  document.querySelector('#demo-tag').textContent=data.tag;document.querySelector('#demo-title').textContent=data.title;document.querySelector('#demo-description').textContent=data.description;document.querySelector('#demo-download').href=`assets/${id}.mp4${version}`;
 }));
