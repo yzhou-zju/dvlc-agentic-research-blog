@@ -18,8 +18,24 @@
   d.focus.events.forEach(event=>{const li=document.createElement('li'),time=document.createElement('time');time.textContent=event.time.toFixed(3)+' s';li.append(time,document.createTextNode(' '+event[language]));ledger.append(li);});
   setMode('still');
   document.querySelectorAll('[data-highlight]').forEach(b=>{b.classList.toggle('selected',b===button);b.setAttribute('aria-pressed',String(b===button));});
-  ['highlight-tag','highlight-title','highlight-description'].forEach((key,i)=>document.getElementById(key).textContent=label[i]);
-  document.getElementById('highlight-run').textContent=(language==='zh'?'来源：':'Source: ')+mediaCatalog.archives[d.run][language][1]+(d.run.endsWith('semantic')?(language==='zh'?' · 仿真语义观测':' · simulator semantics'):(language==='zh'?' · 完整视觉':' · full vision'));
+  const brief={
+   'recognition-authorization':['授权盒定位','Authorization box located'],
+   'recognition-product':['新成品识别','New product recognized'],
+   'humanoid-delivery':['成品交付','Product delivered'],
+   'parallel-repair':['维修并行','Parallel repair'],
+   'power-and-loading':['加工准备','Process preparation'],
+   'close-pickup':['近距离抓取','Close-range pickup']
+  };
+  document.getElementById('highlight-tag').textContent=label[0];
+  document.getElementById('highlight-title').textContent=brief[id][language==='zh'?0:1];
+  document.getElementById('highlight-description').textContent='';
+  document.getElementById('highlight-run').textContent=(language==='zh'?'来源：':'Source: ')+({
+   'gpt6-semantic':'GPT-6 Astra medium',
+   'gpt56-semantic':'GPT-5.6 medium',
+   'gpt56-visual':'GPT-5.6 low',
+   'predictive':'Qwen3.8 Flash Next',
+   'known-state':'Qwen3.8 Flash Next'
+  }[d.run]||mediaCatalog.archives[d.run][language][1]);
   document.getElementById('highlight-time').textContent=`${language==='zh'?'任务时间':'Mission time'} ${clock(d.start_elapsed)}–${clock(d.end_elapsed)} · 3×`;
   document.getElementById('highlight-context').dataset.context=id;
  }));
@@ -30,7 +46,7 @@
   archive.onloadedmetadata=()=>{archive.currentTime=Math.min(time,Math.max(0,archive.duration-.1));};
   archive.poster=d.poster;archive.src=d.src;archive.load();
   document.querySelectorAll('[data-archive]').forEach(b=>{const selected=b.dataset.archive===id;b.classList.toggle('active',selected);b.setAttribute('aria-pressed',String(selected));});
-  document.getElementById('archive-title').textContent=d[language][1];document.getElementById('archive-description').textContent=d[language][2];document.getElementById('archive-download').href=d.src;
+  document.getElementById('archive-title').textContent=d[language][1];document.getElementById('archive-description').textContent=language==='zh'?'原片未改动；条件见实验数据。':'Original unchanged; conditions in evidence manifest.';document.getElementById('archive-download').href=d.src;
  };
  document.querySelectorAll('[data-archive]').forEach(b=>b.addEventListener('click',()=>selectArchive(b.dataset.archive)));
  document.getElementById('highlight-context').addEventListener('click',e=>{

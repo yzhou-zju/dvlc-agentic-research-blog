@@ -1,0 +1,59 @@
+{
+  "source": "One archived GPT-6 Astra medium / 738.1654-second completed run. No model or simulator rerun.",
+  "archive": {
+    "bytes": 19383346,
+    "sha256": "a78221b6409d5f740a2e6204bd9205a0eadcc2772a6183280691ebf3ee7d54e4"
+  },
+  "archive_path": "assets/archive/gpt6-semantic-swarm-3x.mp4",
+  "remasters": {
+    "assets/gpt6-semantic.mp4": {
+      "bytes": 8020017,
+      "sha256": "edf680a2b9bc5bceca741f0e39ef94c01e0a377b4d2492f9c2dd34554b6cd40c"
+    },
+    "assets/gpt6-semantic.jpg": {
+      "bytes": 65062,
+      "sha256": "00c90937e21679ef5b17ac730d94182835f8261e60f3ba43359532675e9c2945"
+    },
+    "assets/zh/gpt6-semantic.mp4": {
+      "bytes": 7936790,
+      "sha256": "e11cbf5f3b5b6e8c17d334b62ce666a6d9c53c712fdf805795fdb5e76633270a"
+    },
+    "assets/zh/gpt6-semantic.jpg": {
+      "bytes": 63047,
+      "sha256": "d9261921cfdb7cc65efc818d92b29cfa0a2614bb9b800aad0d8f6c15d9d44c05"
+    }
+  },
+  "source_camera_crops": [
+    {
+      "robot_id": 0,
+      "x": 10,
+      "y": 858,
+      "width": 300,
+      "height": 168
+    },
+    {
+      "robot_id": 1,
+      "x": 490,
+      "y": 858,
+      "width": 300,
+      "height": 168
+    },
+    {
+      "robot_id": 2,
+      "x": 970,
+      "y": 858,
+      "width": 300,
+      "height": 168
+    },
+    {
+      "robot_id": 3,
+      "x": 1450,
+      "y": 858,
+      "width": 300,
+      "height": 168
+    }
+  ],
+  "composition": "Four original third-person cameras, 2x2 at 744x417 each; no mini-map. The bottom strip shows active shared-plan subtasks sampled from the archived states.jsonl at each playback second. Chinese and English labels are editorial translations of recorded objectives.",
+  "video": "1280x864, 25 fps output, 3x source playback; camera samples taken at 12 fps. Original 1600x1080 composition downscaled for website delivery.",
+  "original_unchanged": true
+}

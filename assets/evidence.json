@@ -173,7 +173,8 @@
     "chinese_edition": "Chinese labels from the same recorded telemetry; no simulator or model reruns.",
     "original_window_recordings": "Five unmodified original Chinese-interface 3x recordings. SHA256 and protocol: assets/archive/manifest.json",
     "highlight_clips": "Six continuous 3x excerpts: two original-window visual-recognition clips and four English camera-remaster clips. Event times and offsets: assets/highlights/manifest.json",
-    "focused_event_views": "Six annotated local stills and continuous clips; assets/focus/manifest.json"
+    "focused_event_views": "Six annotated local stills and continuous clips; assets/focus/manifest.json",
+    "gpt6_camera_remaster": "The GPT-6 Astra medium 738.2-second demo is reframed as four enlarged third-person cameras; the pink mini-maps are omitted. Recorded shared-plan active subtasks replace per-robot action descriptions beneath the cameras. Original full-window archival recording is unchanged; SHA256/crop details in assets/gpt6-camera-remaster.json."
   },
   "source_documents": [
     {
