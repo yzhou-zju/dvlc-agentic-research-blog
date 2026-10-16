@@ -89,15 +89,35 @@ const mediaCatalog={
       "duration_video_s": 7.333333333333333,
       "visual_source": "Original swarm_cooperation_window, continuous excerpt, no added overlay",
       "en": [
-        "Discovery upstairs",
-        "R0 confirms the authorization box",
-        "The scout identifies the authorization box at 589.299 s. The remaining static resource is now localized, and routine discovery is disabled. Watch the second-floor map gain the object marker. Original Chinese interface; no detection overlay added."
+        "Target confirmation",
+        "Authorization-box localization and discovery shutdown",
+        "R0 confirms the authorization box at mission time 589.299 s. Routine discovery is disabled at 589.324 s once required static targets are localized. The crop retains the recorded recognition view and map markers."
       ],
       "zh": [
-        "楼上物体识别",
-        "无人机确认授权盒，结束常规搜索",
-        "R0 在第 589.299 秒确认授权盒。所需静态资源全部定位后，常规搜索关闭。注意二层地图上新增的物体标记。此处保留原始中文窗口，没有补画检测框。"
-      ]
+        "目标身份确认",
+        "授权盒定位与常规搜索关闭",
+        "R0 于任务第 589.299 秒确认授权盒；所需静态目标全部定位后，589.324 秒关闭常规搜索。局部画面保留原录像的识别视图与地图标记。"
+      ],
+      "focus": {
+        "poster": "assets/focus/recognition-authorization.jpg",
+        "video": "assets/focus/recognition-authorization.mp4",
+        "view": {
+          "zh": "R0 识别画面与二层俯视图",
+          "en": "R0 recognition view and second-floor map"
+        },
+        "events": [
+          {
+            "time": 589.299,
+            "zh": "R0 确认授权盒",
+            "en": "R0 confirms the authorization box"
+          },
+          {
+            "time": 589.324,
+            "zh": "常规搜索关闭",
+            "en": "Routine discovery is disabled"
+          }
+        ]
+      }
     },
     "recognition-product": {
       "id": "recognition-product",
@@ -118,15 +138,35 @@ const mediaCatalog={
       "duration_video_s": 7.666666666666667,
       "visual_source": "Original swarm_cooperation_window, continuous excerpt, no added overlay",
       "en": [
-        "Perception to action",
-        "A newly made key is recognized, then picked up",
-        "Machining succeeds at 808.579 s; inspection follows at 812.457 s. R2 discovers the new workpiece at 817.047 s and completes pickup at 820.587 s. Local recognition can still serve newly produced objects after routine search stops."
+        "Perception and execution",
+        "Local recognition and pickup of a new workpiece",
+        "After machining and inspection, the system discovers the new workpiece at 817.047 s; R2 completes pickup at 820.587 s. Newly created targets can still trigger local recognition after routine discovery stops."
       ],
       "zh": [
-        "识别衔接操作",
-        "新成品被识别，随后抓取",
-        "加工于第 808.579 秒完成，812.457 秒完成质检。R2 在 817.047 秒发现新成品，820.587 秒完成抓取。常规搜索结束后，新生成物体仍可按需局部识别。"
-      ]
+        "识别与执行衔接",
+        "新成品的局部识别与抓取",
+        "加工与质检完成后，系统在第 817.047 秒发现新成品，R2 于 820.587 秒完成抓取。该事件说明常规搜索关闭后，新生成目标仍可触发局部识别。"
+      ],
+      "focus": {
+        "poster": "assets/focus/recognition-product.jpg",
+        "video": "assets/focus/recognition-product.mp4",
+        "view": {
+          "zh": "R2 记录相机与工作区俯视图",
+          "en": "R2 recorded camera and work-area map"
+        },
+        "events": [
+          {
+            "time": 817.047,
+            "zh": "发现新生成的成品",
+            "en": "Newly fabricated workpiece discovered"
+          },
+          {
+            "time": 820.587,
+            "zh": "R2 抓取成功",
+            "en": "R2 pickup succeeds"
+          }
+        ]
+      }
     },
     "parallel-repair": {
       "id": "parallel-repair",
@@ -149,15 +189,45 @@ const mediaCatalog={
       "start_video_s": 129.72363,
       "duration_video_s": 18.666666666666668,
       "en": [
-        "Two useful actions overlap",
-        "Open the device while a teammate fetches its module",
-        "R1 inserts the repair key, unlocks and opens the service compartment. R3 simultaneously travels to and picks up module M-23. Both actions appear in the execution log; the clip alone does not measure a causal time saving."
+        "Concurrent repair preparation",
+        "Overlapping compartment access and module retrieval",
+        "R1 inserts the repair key, unlocks, and opens the compartment while R3 retrieves module M-23. The paired camera crops share the same recorded instant. Logs confirm temporal overlap; the clip does not isolate a causal speedup."
       ],
       "zh": [
-        "两项有效工作重叠",
-        "一边打开维修舱，一边取维修模块",
-        "R1 插入检修钥匙、解锁并打开维修舱；与此同时，R3 前往并抓取 M-23 维修模块。日志确认两项操作发生重叠；片段本身不用于量化因果加速。"
-      ]
+        "维修准备并行",
+        "维修舱开启与模块获取重叠",
+        "R1 插入检修钥匙、解锁并打开维修舱；R3 同时前往获取 M-23 维修模块。并列画面来自同一录像时刻，日志确认两项操作存在时间重叠。片段不单独用于量化因果加速。"
+      ],
+      "focus": {
+        "poster": "assets/focus/parallel-repair.jpg",
+        "video": "assets/focus/parallel-repair.mp4",
+        "view": {
+          "zh": "R1 与 R3 的同步第三人称视角",
+          "en": "Synchronized R1 and R3 third-person views"
+        },
+        "events": [
+          {
+            "time": 392.973,
+            "zh": "R1 开始插入检修钥匙",
+            "en": "R1 starts inserting the repair key"
+          },
+          {
+            "time": 394.043,
+            "zh": "R3 开始取维修模块",
+            "en": "R3 starts module retrieval"
+          },
+          {
+            "time": 438.092,
+            "zh": "R1 打开维修舱",
+            "en": "R1 opens the service compartment"
+          },
+          {
+            "time": 443.861,
+            "zh": "R3 取回模块",
+            "en": "R3 retrieves the module"
+          }
+        ]
+      }
     },
     "power-and-loading": {
       "id": "power-and-loading",
@@ -182,15 +252,40 @@ const mediaCatalog={
       "start_video_s": 163.056963,
       "duration_video_s": 10.333333333333334,
       "en": [
-        "Parallel preparation",
-        "Connect power and load material together",
-        "After repair, R1 connects temporary power while R2 loads the matching blank. R3 then establishes authorization and R2 starts machining. Different roles converge on one shared task."
+        "Concurrent production preparation",
+        "Temporary power connection and blank loading",
+        "After repair, R1 connects temporary power while R2 loads the matching blank. R3 subsequently establishes authorization, followed by machining. Paired views show the overlapping preparation operations."
       ],
       "zh": [
-        "并行准备",
-        "接电与装料同时推进",
-        "维修完成后，R1 连接临时供电，R2 同时装入匹配毛坯。随后 R3 建立授权，R2 启动加工。不同角色的操作汇合到同一项任务。"
-      ]
+        "加工准备并行",
+        "临时供电连接与毛坯装载",
+        "维修完成后，R1 连接临时供电，R2 同时装载匹配毛坯；随后 R3 建立授权，R2 启动加工。并列视图突出接电与装料的重叠过程。"
+      ],
+      "focus": {
+        "poster": "assets/focus/power-and-loading.jpg",
+        "video": "assets/focus/power-and-loading.mp4",
+        "view": {
+          "zh": "R1 与 R2 的同步第三人称视角",
+          "en": "Synchronized R1 and R2 third-person views"
+        },
+        "events": [
+          {
+            "time": 491.956,
+            "zh": "R1 开始接电",
+            "en": "R1 starts connecting power"
+          },
+          {
+            "time": 492.403,
+            "zh": "R2 开始装料",
+            "en": "R2 starts loading"
+          },
+          {
+            "time": 503.928,
+            "zh": "R3 建立授权",
+            "en": "R3 establishes authorization"
+          }
+        ]
+      }
     },
     "humanoid-delivery": {
       "id": "humanoid-delivery",
@@ -210,15 +305,35 @@ const mediaCatalog={
       "start_video_s": 191.045357,
       "duration_video_s": 28.333333333333332,
       "en": [
-        "Transport and delivery",
-        "The humanoid takes the finished key to its destination",
-        "R3 picks up the finished key and carries it to the delivery station, where placement succeeds at 656.155 s. This segment shows ground-floor transport, not a cross-floor delivery."
+        "Workpiece transport",
+        "Humanoid pickup and delivery",
+        "Following successful pickup, R3 carries the workpiece to the delivery station and completes placement at 656.155 s. The map and third-person camera show transport within the ground floor."
       ],
       "zh": [
-        "搬运与交付",
-        "人形机器人将成品送到交接台",
-        "R3 抓起成品钥匙并运往交接台，于第 656.155 秒完成放置。这里展示的是一层内搬运，不将其描述为跨层交付。"
-      ]
+        "成品搬运",
+        "人形机器人的成品获取与交付",
+        "R3 完成成品抓取后移向交接台，于第 656.155 秒完成交付。俯视地图与第三人称画面共同展示一层内搬运过程。"
+      ],
+      "focus": {
+        "poster": "assets/focus/humanoid-delivery.jpg",
+        "video": "assets/focus/humanoid-delivery.mp4",
+        "view": {
+          "zh": "R3 第三人称视角与一层俯视图",
+          "en": "R3 third-person view and ground-floor map"
+        },
+        "events": [
+          {
+            "time": 595.811,
+            "zh": "R3 抓取成品成功",
+            "en": "R3 picks up the finished key"
+          },
+          {
+            "time": 656.155,
+            "zh": "R3 交付成功",
+            "en": "R3 completes delivery"
+          }
+        ]
+      }
     },
     "close-pickup": {
       "id": "close-pickup",
@@ -238,14 +353,34 @@ const mediaCatalog={
       "duration_video_s": 6.666666666666667,
       "en": [
         "Close-range manipulation",
-        "Pick up the verified finished key",
-        "R2 completes pickup at 897.016 s, then starts delivery at 899.364 s. This is the recent full-visual comparison run. The clip ends before delivery; its later recheck and recovery remain in the full recording."
+        "Workpiece pickup and delivery initiation",
+        "R2 completes pickup at 897.016 s and starts delivery at 899.364 s. This excerpt comes from the full-visual comparison and ends before delivery completion; subsequent rechecks and recovery remain in the full recording."
       ],
       "zh": [
         "近距离操作",
-        "抓起已经确认的成品钥匙",
-        "R2 于第 897.016 秒完成抓取，899.364 秒开始交付。这段来自近期完整视觉对照，结束时尚未交付；之后的复核与恢复保留在完整录像中。"
-      ]
+        "成品抓取与交付启动",
+        "R2 于第 897.016 秒完成抓取，899.364 秒启动交付动作。该片段来自完整视觉对照，结束时尚未完成交付；后续复核与恢复记录保留在完整录像中。"
+      ],
+      "focus": {
+        "poster": "assets/focus/close-pickup.jpg",
+        "video": "assets/focus/close-pickup.mp4",
+        "view": {
+          "zh": "R2 记录相机与工作区俯视图",
+          "en": "R2 recorded camera and work-area map"
+        },
+        "events": [
+          {
+            "time": 897.016,
+            "zh": "R2 抓取成功",
+            "en": "R2 pickup succeeds"
+          },
+          {
+            "time": 899.364,
+            "zh": "R2 开始交付动作",
+            "en": "R2 starts the delivery action"
+          }
+        ]
+      }
     }
   }
 };

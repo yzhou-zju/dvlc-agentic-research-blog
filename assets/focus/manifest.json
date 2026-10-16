@@ -1,0 +1,290 @@
+[
+  {
+    "id": "recognition-authorization",
+    "source": "assets/archive/predictive-swarm-3x.mp4",
+    "source_sha256": "cf4edfc0327594fa1cd098276f0a7dc6187c2832cb88b70a106c15da4063b5db",
+    "start_video_s": 192.361211,
+    "duration_video_s": 7.333333333333333,
+    "start_mission_s": 578,
+    "end_mission_s": 600,
+    "still_mission_s_approx": 591.8,
+    "still_source_video_s": 196.961211,
+    "panels": [
+      {
+        "source_crop_xywh": [
+          704,
+          138,
+          630,
+          540
+        ],
+        "output_xywh": [
+          34,
+          136,
+          560,
+          480
+        ]
+      },
+      {
+        "source_crop_xywh": [
+          10,
+          858,
+          300,
+          168
+        ],
+        "output_xywh": [
+          644,
+          170,
+          450,
+          252
+        ]
+      }
+    ],
+    "events": [
+      "589.299 s  |  R0 confirms authorization box",
+      "589.324 s  |  Required static objects localized; routine discovery disabled"
+    ],
+    "protocol": "full vision",
+    "alterations": "Crop, resize, layout, English editorial labels, and mission timer only; no new object detections or robot trajectories.",
+    "video_sha256": "bbae6f8a7cb63dfe0f68ccd21fa518cf208eee0b92542f3e157500f2986fe6d1"
+  },
+  {
+    "id": "recognition-product",
+    "source": "assets/archive/predictive-swarm-3x.mp4",
+    "source_sha256": "cf4edfc0327594fa1cd098276f0a7dc6187c2832cb88b70a106c15da4063b5db",
+    "start_video_s": 267.694545,
+    "duration_video_s": 7.666666666666667,
+    "start_mission_s": 804,
+    "end_mission_s": 827,
+    "still_mission_s_approx": 821.0,
+    "still_source_video_s": 273.3612116666667,
+    "panels": [
+      {
+        "source_crop_xywh": [
+          355,
+          160,
+          310,
+          300
+        ],
+        "output_xywh": [
+          66,
+          136,
+          496,
+          480
+        ]
+      },
+      {
+        "source_crop_xywh": [
+          970,
+          858,
+          300,
+          168
+        ],
+        "output_xywh": [
+          644,
+          170,
+          450,
+          252
+        ]
+      }
+    ],
+    "events": [
+      "817.047 s  |  Newly fabricated workpiece discovered",
+      "820.587 s  |  R2 pickup succeeds"
+    ],
+    "protocol": "full vision",
+    "alterations": "Crop, resize, layout, English editorial labels, and mission timer only; no new object detections or robot trajectories.",
+    "video_sha256": "5835d59bf438e36bef3d1a23004664401304cf86901dea69a51392d276e0e4aa"
+  },
+  {
+    "id": "parallel-repair",
+    "source": "assets/archive/gpt56-semantic-swarm-3x.mp4",
+    "source_sha256": "01db7f0e0fc7fb62769670b6bb84fb58e85d290f3ce3059b84b839cd53aba2a0",
+    "start_video_s": 129.72363,
+    "duration_video_s": 18.666666666666668,
+    "start_mission_s": 390,
+    "end_mission_s": 446,
+    "still_mission_s_approx": 423.0,
+    "still_source_video_s": 140.72363,
+    "panels": [
+      {
+        "source_crop_xywh": [
+          490,
+          858,
+          300,
+          168
+        ],
+        "output_xywh": [
+          24,
+          181,
+          524,
+          294
+        ]
+      },
+      {
+        "source_crop_xywh": [
+          1450,
+          858,
+          300,
+          168
+        ],
+        "output_xywh": [
+          572,
+          181,
+          524,
+          294
+        ]
+      }
+    ],
+    "events": [
+      "R1  |  Insert key: 392.973-422.450 s; compartment open: 438.092 s",
+      "R3  |  Retrieve module M-23: 394.043-443.861 s"
+    ],
+    "protocol": "simulator semantics",
+    "alterations": "Crop, resize, layout, English editorial labels, and mission timer only; no new object detections or robot trajectories.",
+    "video_sha256": "bc640286dcb2a48735e54a848e0c9fdf1a5d305708da1634dc5bba62b83fbb46"
+  },
+  {
+    "id": "power-and-loading",
+    "source": "assets/archive/gpt56-semantic-swarm-3x.mp4",
+    "source_sha256": "01db7f0e0fc7fb62769670b6bb84fb58e85d290f3ce3059b84b839cd53aba2a0",
+    "start_video_s": 163.056963,
+    "duration_video_s": 10.333333333333334,
+    "start_mission_s": 490,
+    "end_mission_s": 521,
+    "still_mission_s_approx": 502.4,
+    "still_source_video_s": 167.19029633333332,
+    "panels": [
+      {
+        "source_crop_xywh": [
+          490,
+          858,
+          300,
+          168
+        ],
+        "output_xywh": [
+          24,
+          181,
+          524,
+          294
+        ]
+      },
+      {
+        "source_crop_xywh": [
+          970,
+          858,
+          300,
+          168
+        ],
+        "output_xywh": [
+          572,
+          181,
+          524,
+          294
+        ]
+      }
+    ],
+    "events": [
+      "R1  |  Connect power: 491.956-501.873 s",
+      "R2  |  Load blank: 492.403-503.119 s"
+    ],
+    "protocol": "simulator semantics",
+    "alterations": "Crop, resize, layout, English editorial labels, and mission timer only; no new object detections or robot trajectories.",
+    "video_sha256": "383b193cc5e3a004fef3e2223f7009f3bb4f7d2c9862629ad84d01d8636c2002"
+  },
+  {
+    "id": "humanoid-delivery",
+    "source": "assets/archive/gpt6-semantic-swarm-3x.mp4",
+    "source_sha256": "a78221b6409d5f740a2e6204bd9205a0eadcc2772a6183280691ebf3ee7d54e4",
+    "start_video_s": 191.045357,
+    "duration_video_s": 28.333333333333332,
+    "start_mission_s": 574,
+    "end_mission_s": 659,
+    "still_mission_s_approx": 656.5,
+    "still_source_video_s": 218.545357,
+    "panels": [
+      {
+        "source_crop_xywh": [
+          10,
+          120,
+          660,
+          580
+        ],
+        "output_xywh": [
+          41,
+          136,
+          546,
+          480
+        ]
+      },
+      {
+        "source_crop_xywh": [
+          1450,
+          858,
+          300,
+          168
+        ],
+        "output_xywh": [
+          644,
+          170,
+          450,
+          252
+        ]
+      }
+    ],
+    "events": [
+      "595.811 s  |  R3 pickup succeeds",
+      "656.155 s  |  Delivery succeeds; this segment stays on the ground floor"
+    ],
+    "protocol": "simulator semantics",
+    "alterations": "Crop, resize, layout, English editorial labels, and mission timer only; no new object detections or robot trajectories.",
+    "video_sha256": "3a68c25c22f9ae20ad38bf5d6ecae571146719e9dcebec282967b37d0754fe84"
+  },
+  {
+    "id": "close-pickup",
+    "source": "assets/archive/gpt56-visual-swarm-3x.mp4",
+    "source_sha256": "ac7de25826086037ded429cfd97393c67910e53293b325de17bacf7a8da9378d",
+    "start_video_s": 295.95519,
+    "duration_video_s": 6.666666666666667,
+    "start_mission_s": 889,
+    "end_mission_s": 909,
+    "still_mission_s_approx": 897.4,
+    "still_source_video_s": 298.75519,
+    "panels": [
+      {
+        "source_crop_xywh": [
+          355,
+          160,
+          310,
+          300
+        ],
+        "output_xywh": [
+          66,
+          136,
+          496,
+          480
+        ]
+      },
+      {
+        "source_crop_xywh": [
+          970,
+          858,
+          300,
+          168
+        ],
+        "output_xywh": [
+          644,
+          170,
+          450,
+          252
+        ]
+      }
+    ],
+    "events": [
+      "897.016 s  |  R2 pickup succeeds",
+      "899.364 s  |  Delivery action starts; delivery is not complete in this clip"
+    ],
+    "protocol": "full vision",
+    "alterations": "Crop, resize, layout, English editorial labels, and mission timer only; no new object detections or robot trajectories.",
+    "video_sha256": "a73361c026149c4ad90503ff8c8aa3cb09edf84466bc0722b2fc4f8f57ae2cf9"
+  }
+]

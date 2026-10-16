@@ -1,0 +1,55 @@
+{
+  "title": "D-VLC: Decentralized Vision-Language Collaboration for Heterogeneous Embodied Multi-Robot Systems in Unknown Environments",
+  "authors": "Yuan Zhou et al.",
+  "source": "https://arxiv.org/pdf/2607.29009v2",
+  "paper": "https://arxiv.org/abs/2607.29009",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "pdf_sha256": "986daa5db95c0be06894a0e2e2821ab000189be478ccaf7daab145fc5567bdc2",
+  "figures": [
+    {
+      "figure": 1,
+      "pdf_page": 2,
+      "render_width": 1855,
+      "render_height": 2400,
+      "crop_pixels": [
+        220,
+        156,
+        1635,
+        910
+      ],
+      "image": "dvlc-figure-1.png",
+      "sha256": "c2d4729d19172608f46742e64866c8a92dafd34241cce03ef8de460650dc394f",
+      "changes": "PDF page rendering and rectangular crop only; original figure content unchanged."
+    },
+    {
+      "figure": 2,
+      "pdf_page": 4,
+      "render_width": 1855,
+      "render_height": 2400,
+      "crop_pixels": [
+        220,
+        154,
+        1635,
+        700
+      ],
+      "image": "dvlc-figure-2.png",
+      "sha256": "51089df2379e5469158b46cb4a2d09535d7fc0b0ac1e150a4d912ed79ca2cac3",
+      "changes": "PDF page rendering and rectangular crop only; original figure content unchanged."
+    },
+    {
+      "figure": 4,
+      "pdf_page": 6,
+      "render_width": 1855,
+      "render_height": 2400,
+      "crop_pixels": [
+        166,
+        156,
+        1689,
+        670
+      ],
+      "image": "dvlc-figure-4.png",
+      "sha256": "05bf07cde1e26f3a926aae8712137e05268e581e015f4dc2064223e0453d505d",
+      "changes": "PDF page rendering and rectangular crop only; original figure content unchanged."
+    }
+  ]
+}

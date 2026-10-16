@@ -1,4 +1,4 @@
-D-VLC research blog — English and Chinese editions
+D-VLC technical report — English and Chinese editions
 
 Public website: https://yzhou-zju.github.io/dvlc-agentic-research-blog/
 Chinese edition: https://yzhou-zju.github.io/dvlc-agentic-research-blog/zh.html
@@ -19,3 +19,10 @@ No robot experiments, Unity instances, or model calls were started to build this
 No credentials, model weights, raw inference requests, or private local paths are included.
 
 For a local preview, serve this directory with any static HTTP server. A server supporting HTTP byte-range requests is required for reliable video seeking.
+
+Report revision:
+- Formal terminology and full D-VLC citation on first introduction.
+- Four-stage framework evolution with GPT-6 engineering roles, validation, retained changes and reversions.
+- Original D-VLC Figures 1, 2 and 4 cropped directly from the paper PDF, with attribution under CC BY 4.0; assets/paper/manifest.json records provenance.
+- Six annotated local event stills and continuous 3x clips in assets/focus/, featuring top-down maps and robot cameras. Event log timestamps and crop coordinates are provided.
+- The event stills are the default highlight view. A control switches to local video; full recordings remain unchanged.
