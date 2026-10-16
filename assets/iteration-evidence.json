@@ -1,0 +1,99 @@
+{
+  "scope": "Archived system-development evidence; no new experiments performed for this report. R0-R3 are editorial stage labels, not release IDs.",
+  "controlled_pair": {
+    "baseline_s": 422.1133131980896,
+    "candidate_s": 352.0577185153961,
+    "saved_s": 70.05559468269348,
+    "saved_percent": 16.596395444608437,
+    "both_completed": true,
+    "same_fixture": true,
+    "limitation": "One controlled pair; model and transport latency remain variable. Known map and recorded in-flight navigation restored; not a from-start run."
+  },
+  "retention_decision": {
+    "retained": "asynchronous model-selected nearby pickup and direct release reordering",
+    "retained_core_matches_successful_ab": true,
+    "removed": "idle physical preposition waiting points",
+    "reason": "New waiting point overlapped a subsequently reserved peer departure path; loaded checkpoint missed beyond 228s versus baseline about 107s.",
+    "full_test_pending": false,
+    "full_test_episode": "079736b80cec4a3e88dbe8a6f36957ad",
+    "full_test_complete": true
+  },
+  "evaluation_criteria": {
+    "early": "observed installed and connected facts",
+    "extended": "observed installed, connected and loaded facts"
+  },
+  "archived_test_runs": {
+    "initial_component_checks": 15,
+    "additional_checks": 8,
+    "regression_checks": 373,
+    "depth_related_checks": 29,
+    "final_aggregate": 402
+  },
+  "full_run": {
+    "elapsed_s": 896.0954458713531,
+    "complete": true,
+    "new_predictive_pickup_events": 0
+  },
+  "source_documents": [
+    {
+      "file": "pickup_ab_result.json",
+      "sha256": "28f61be7af7003f66aecde64c6937b0a1b3b362809d7d7030b482b09338a7e57",
+      "bytes": 355
+    },
+    {
+      "file": "retention_decision.json",
+      "sha256": "d48e1f8dfcf7bcd116706497a2e111559305e747f9dc1ce423daae428ef9a380",
+      "bytes": 468
+    },
+    {
+      "file": "idle_candidate_completion.json",
+      "sha256": "a3bd6439b7f0f35ae3573e195720b6d9ac26df1222075961989fd1c057a6dd91",
+      "bytes": 144
+    },
+    {
+      "file": "idle_baseline_completion.json",
+      "sha256": "e2439e18463da77711b9b86c0c3360939361c8a3fe3e27a598671c325fc0a03f",
+      "bytes": 143
+    },
+    {
+      "file": "idle_load_baseline_completion.json",
+      "sha256": "debd741c72e5bb3ea52f5a0d50e9f490bfea4f0d6d0291cb3a11f124b6933db3",
+      "bytes": 150
+    },
+    {
+      "file": "unit.log",
+      "sha256": "2800c7cd22ed481bea59a3046f0f97757db76c6e3b9df5abca47ce3db51c758c",
+      "bytes": 1491
+    },
+    {
+      "file": "extra_units.log",
+      "sha256": "93087ffd4a97f585d4eb8593140a6f6e5aeb18baaf04ad8e959969cc6cc7c495",
+      "bytes": 758
+    },
+    {
+      "file": "regression_summary.log",
+      "sha256": "327c1451cf4af2b66ce5db58ee58a24fd33ece4d5a931458c83e29bbd3980be3",
+      "bytes": 4525
+    },
+    {
+      "file": "final_units.log",
+      "sha256": "465e6ae4b4467fdb3b31a35149e3c0bcdb0b0f7be00fae8febfe613c6d305724",
+      "bytes": 3287
+    },
+    {
+      "file": "baseline_source_hashes.json",
+      "sha256": "362addea0ac76a091aa08608546e191dc1bb5dd54cfd96ec7fb06835af89be7d",
+      "bytes": 43185
+    },
+    {
+      "file": "candidate_source_hashes.json",
+      "sha256": "01e18fcf11314dbd0bd997be5167209b5f4300f421ca44091d521ec411d69b01",
+      "bytes": 43185
+    },
+    {
+      "file": "full_source_hashes.json",
+      "sha256": "57a36712ea0fe331807488a205f70a9121e60677ffd2216a48d0aafe5ced0ba2",
+      "bytes": 62862
+    }
+  ]
+}

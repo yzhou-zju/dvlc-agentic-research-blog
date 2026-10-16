@@ -26,6 +26,7 @@
  const archive=document.getElementById('archive-video');
  const selectArchive=(id,time=0)=>{
   const d=mediaCatalog.archives[id];archive.pause();
+  document.querySelector(`[data-archive="${id}"]`)?.closest('details')?.setAttribute('open','');
   archive.onloadedmetadata=()=>{archive.currentTime=Math.min(time,Math.max(0,archive.duration-.1));};
   archive.poster=d.poster;archive.src=d.src;archive.load();
   document.querySelectorAll('[data-archive]').forEach(b=>{const selected=b.dataset.archive===id;b.classList.toggle('active',selected);b.setAttribute('aria-pressed',String(selected));});

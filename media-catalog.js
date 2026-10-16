@@ -16,12 +16,12 @@ const mediaCatalog={
     },
     "gpt6-semantic": {
       "en": [
-        "GPT-6 · execution",
+        "GPT-6 Astra · execution",
         "GPT-6 Astra medium · 738.2 s · completed",
         "Selected successful historical run with simulator semantics; the four-run set also includes one incomplete trial."
       ],
       "zh": [
-        "GPT-6 执行实例",
+        "GPT-6 Astra 执行实例",
         "GPT-6 Astra medium · 738.2 秒 · 已完成",
         "仿真语义观测下的历史成功案例；同组四轮还包括一轮未完成实验。"
       ],

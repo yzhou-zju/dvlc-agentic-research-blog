@@ -1,5 +1,5 @@
 {
-  "title": "From D-VLC to Agent-Built Robot Teams",
+  "title": "D-VLC: Joint Iteration of the System and Research Workflow",
   "assembled_date": "2026-10-16",
   "method": "Read-only audit of archived reports, traces, code snapshots and video. No robotics or model experiment rerun for this article.",
   "framework_reference": "https://arxiv.org/abs/2607.29009",
@@ -172,7 +172,8 @@
     "added_detections": false,
     "chinese_edition": "Chinese labels from the same recorded telemetry; no simulator or model reruns.",
     "original_window_recordings": "Five unmodified original Chinese-interface 3x recordings. SHA256 and protocol: assets/archive/manifest.json",
-    "highlight_clips": "Six continuous 3x excerpts: two original-window visual-recognition clips and four English camera-remaster clips. Event times and offsets: assets/highlights/manifest.json"
+    "highlight_clips": "Six continuous 3x excerpts: two original-window visual-recognition clips and four English camera-remaster clips. Event times and offsets: assets/highlights/manifest.json",
+    "focused_event_views": "Six annotated local stills and continuous clips; assets/focus/manifest.json"
   },
   "source_documents": [
     {
@@ -227,5 +228,6 @@
       "result_sha256": "52c50d841c0c36a9c3c9e363d6dd1a872ec9e8ce94e797b1815475daf9fcb1dc",
       "video_sha256": "a78221b6409d5f740a2e6204bd9205a0eadcc2772a6183280691ebf3ee7d54e4"
     }
-  ]
+  ],
+  "iteration_evidence": "assets/iteration-evidence.json"
 }

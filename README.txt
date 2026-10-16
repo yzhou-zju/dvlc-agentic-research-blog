@@ -22,7 +22,13 @@ For a local preview, serve this directory with any static HTTP server. A server 
 
 Report revision:
 - Formal terminology and full D-VLC citation on first introduction.
-- Four-stage framework evolution with GPT-6 engineering roles, validation, retained changes and reversions.
+- Four-stage framework evolution with GPT-6 Astra engineering roles, validation, retained changes and reversions.
 - Original D-VLC Figures 1, 2 and 4 cropped directly from the paper PDF, with attribution under CC BY 4.0; assets/paper/manifest.json records provenance.
 - Six annotated local event stills and continuous 3x clips in assets/focus/, featuring top-down maps and robot cameras. Event log timestamps and crop coordinates are provided.
 - The event stills are the default highlight view. A control switches to local video; full recordings remain unchanged.
+
+Current presentation:
+- Restrained technical-report layout with no images in the research background. Original D-VLC figures are in the source appendix.
+- Concrete R0-R3 code-and-evaluation iteration, including the extended completion criterion and rollback evidence; see assets/iteration-evidence.json.
+- GPT-6 Astra is the main presentation. The four actual historical GPT-6 runs are reported together, including the incomplete run.
+- GPT-5.6 measurements and recordings remain under historical disclosures with their original model attribution.
