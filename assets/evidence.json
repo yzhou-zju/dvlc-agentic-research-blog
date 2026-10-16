@@ -1,0 +1,228 @@
+{
+  "title": "From D-VLC to Agent-Built Robot Teams",
+  "assembled_date": "2026-10-16",
+  "method": "Read-only audit of archived reports, traces, code snapshots and video. No robotics or model experiment rerun for this article.",
+  "framework_reference": "https://arxiv.org/abs/2607.29009",
+  "full_visual_pair": {
+    "protocol": "Same original two-floor layout, unknown initial objects and map; same 416 recorded code files, prompts, schemas and permissions. Online observations subsequently diverged. One run per model.",
+    "action_vision_exploration_model": "Qwen3.5-4B",
+    "qwen": {
+      "task_model": "Qwen3.8 Flash Next FP8",
+      "run": "close_baseline_g1_qwen38_fp8",
+      "complete": true,
+      "elapsed_s": 1255.4046,
+      "required_objects_found_s": 623.5005,
+      "remaining_after_discovery_s": 631.9041,
+      "skill_attempts": 126,
+      "operation_attempts": 31,
+      "successful_operations": 25,
+      "failed_operations": 6,
+      "cancelled_operations": 0,
+      "feedback_corrections": 7,
+      "concurrency_reviews": 8,
+      "adopted_concurrency_revisions": 0,
+      "task_model_requests": 26,
+      "mean_request_s": 13.81596,
+      "first_plan_published_s": 66.44,
+      "sampled_travel_m": 1287.85,
+      "stationary_intervals_over_4s": 125,
+      "http_429": 3
+    },
+    "gpt": {
+      "task_model": "gpt-5.6-sol",
+      "effort": "low",
+      "run": "close_baseline_g1_gpt56_low",
+      "complete": true,
+      "elapsed_s": 993.604,
+      "required_objects_found_s": 523.769,
+      "remaining_after_discovery_s": 469.835,
+      "skill_attempts": 117,
+      "operation_attempts": 24,
+      "successful_operations": 21,
+      "failed_operations": 2,
+      "cancelled_operations": 1,
+      "feedback_corrections": 4,
+      "concurrency_reviews": 4,
+      "adopted_concurrency_revisions": 0,
+      "task_model_requests": 14,
+      "mean_request_s": 26.44346,
+      "first_plan_published_s": 102.8,
+      "sampled_travel_m": 1022.57,
+      "stationary_intervals_over_4s": 95,
+      "http_429": 0
+    },
+    "caveats": [
+      "Single pair; not a general model ranking.",
+      "Includes service errors and recovery.",
+      "No adopted concurrency review revision in either run.",
+      "Skill attempts include exploration, failure and cancellation.",
+      "Stationary intervals include useful manipulation and sustained interaction."
+    ]
+  },
+  "archival_semantic_runs": [
+    {
+      "run": "gpt56_medium_2",
+      "task_model": "gpt-5.6-sol",
+      "effort": "medium",
+      "elapsed_s": 578.6327167,
+      "complete": true,
+      "skill_attempts": 87,
+      "operation_attempts": 22,
+      "accepted_corrections": 0
+    },
+    {
+      "run": "gpt6_medium_2",
+      "task_model": "gpt-6-astra",
+      "effort": "medium",
+      "elapsed_s": 738.1654,
+      "complete": true,
+      "skill_attempts": 122,
+      "operation_attempts": 28,
+      "accepted_corrections": 0
+    }
+  ],
+  "semantic_protocol": "No initially known objects or completed receipts. Simulator directly supplies visibility-gated semantic identities and positions. No online RGB recognition. Local maps built from simulated LiDAR. Not directly comparable with the recent visual pipeline.",
+  "gpt6_historical_set": [
+    {
+      "run": "low_1",
+      "complete": true,
+      "elapsed_s": 797.704,
+      "corrections": 1
+    },
+    {
+      "run": "low_2",
+      "complete": true,
+      "elapsed_s": 816.561,
+      "corrections": 3
+    },
+    {
+      "run": "medium_1",
+      "complete": false,
+      "manually_stopped_s": 1517.041,
+      "corrections": 10
+    },
+    {
+      "run": "medium_2",
+      "complete": true,
+      "elapsed_s": 738.165,
+      "corrections": 0
+    }
+  ],
+  "known_state_demo": {
+    "run": "after_find",
+    "task_model": "Qwen3.8 Flash Next BF16",
+    "remaining_elapsed_s": 315.626,
+    "complete": true,
+    "known_objects": 12,
+    "map": "fully known",
+    "successful_prior_operations": 3,
+    "initial_plan": "restored",
+    "routine_discovery": "initially disabled; new product can trigger local recognition",
+    "skill_attempts": 23,
+    "operation_attempts": 20,
+    "successful_operations": 18,
+    "failed_operations": 2
+  },
+  "predictive_candidate_pair": {
+    "fixture_sha256": "71dbc4271073fe1701f32ddd4a0e31a53a6f2a7075110f6ddebc4057a0c4e3b1",
+    "baseline_remaining_s": 422.113,
+    "candidate_remaining_s": 352.058,
+    "saving_s": 70.056,
+    "saving_percent": 16.6,
+    "known_objects": 12,
+    "map": "fully known",
+    "prior_receipts": "8 successful and 1 failed; plan restored",
+    "both_complete": true,
+    "source_files_identical": 184,
+    "source_files_compared": 185,
+    "differing_module": "predictive_prepare.py",
+    "limitations": [
+      "Single restored-checkpoint pair.",
+      "Candidate included later-removed waiting-point prepositioning.",
+      "Entire saving cannot be attributed to final retained pickup reordering alone.",
+      "A subsequent 896.095-second full run completed but did not trigger the new pickup preparation feature."
+    ],
+    "retained": "Nearby pickup and direct release reordering",
+    "removed": "Idle physical preposition waiting points; a separate test blocked a teammate route."
+  },
+  "reference_image_component_test": {
+    "images": 24,
+    "formal_pipeline_replays": 192,
+    "deterministic_tests_passed": 5,
+    "positive_identity_baseline": "30/30",
+    "positive_identity_candidate": "30/30",
+    "initial_false_positives_baseline": "0/18",
+    "initial_false_positives_candidate": "4/18",
+    "final_negative_false_positives_both": "0/18",
+    "positive_latency_s": [
+      0.61,
+      0.646
+    ],
+    "four_way_group_latency_s": [
+      1.186,
+      1.221
+    ],
+    "decision": "not merged",
+    "limitations": "Small same-scene labeled replay with selected positives; not blind generalization."
+  },
+  "media_editing": {
+    "playback": "3x as in the archived source",
+    "camera_views": "Cropped, resized original footage; camera views sampled at 12 fps, output encoded at 25 fps. No new simulation.",
+    "status": "English labels from the corresponding archived telemetry, sampled once per video second.",
+    "added_detections": false
+  },
+  "source_documents": [
+    {
+      "id": "full-visual-comparison",
+      "sha256": "b9791593e5ff46597bcfaeeb451243219000bd549c13c1978258b6dbdc6f4115",
+      "bytes": 4899
+    },
+    {
+      "id": "full-visual-metrics",
+      "sha256": "3d0e667f59cea6302cd1a1df59edfd5a526b362dc9a63e6a2ace4e9b28f07703",
+      "bytes": 40342
+    },
+    {
+      "id": "predictive-pair",
+      "sha256": "28f61be7af7003f66aecde64c6937b0a1b3b362809d7d7030b482b09338a7e57",
+      "bytes": 355
+    },
+    {
+      "id": "predictive-retention",
+      "sha256": "d48e1f8dfcf7bcd116706497a2e111559305e747f9dc1ce423daae428ef9a380",
+      "bytes": 468
+    },
+    {
+      "id": "reference-image-unit-report",
+      "sha256": "cb3d6f2f3374c341f6b065d50fa490a7a2d33cfdd451c952d56c474217fa2d35",
+      "bytes": 8510
+    },
+    {
+      "id": "reference-image-unit-metrics",
+      "sha256": "d6f45b948fdb812a8557ac4aa99d40196c5c8c0095a659d0597b6db653696d60",
+      "bytes": 6899
+    },
+    {
+      "id": "reference-image-parallel-metrics",
+      "sha256": "232099ffbdfb33cefde9a9c2561fd09fe7dba9cfd3fc52624a66dab18c25784b",
+      "bytes": 823
+    },
+    {
+      "id": "after-discovery-report",
+      "sha256": "99ec4c76ec33542bfd0f854bf76fbccc659c03dc629e4c9e5e1a3606f818303d",
+      "bytes": 2364
+    },
+    {
+      "id": "gpt56-medium-2",
+      "episode_id": "8763e4601ec44c5eb95a3c42290daffa",
+      "result_sha256": "b678ba62ff0a25ec1254deb2e440f582bd78fe9663ba6ad286ccb488e0c467c1",
+      "video_sha256": "01db7f0e0fc7fb62769670b6bb84fb58e85d290f3ce3059b84b839cd53aba2a0"
+    },
+    {
+      "id": "gpt6-medium-2",
+      "episode_id": "c580cd77bfb94550981c37e0ce0ddbb0",
+      "result_sha256": "52c50d841c0c36a9c3c9e363d6dd1a872ec9e8ce94e797b1815475daf9fcb1dc",
+      "video_sha256": "a78221b6409d5f740a2e6204bd9205a0eadcc2772a6183280691ebf3ee7d54e4"
+    }
+  ]
+}

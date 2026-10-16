@@ -1,0 +1,54 @@
+[
+  {
+    "id": "gpt56-semantic",
+    "title": "Four robots. One complete mission.",
+    "model": "GPT-5.6 / medium",
+    "duration": "578.6 s",
+    "condition": "Visibility-gated simulator semantics | No online image recognition",
+    "notes": [
+      "Starts with no known objects or completed operations.",
+      "Object identity and position come from the simulator, subject to visibility.",
+      "Action selection and exploration: Qwen3.5-4B."
+    ],
+    "attempts": "87 skill attempts / 22 task operations"
+  },
+  {
+    "id": "gpt6-semantic",
+    "title": "GPT-6 coordinating the robot team.",
+    "model": "GPT-6 Astra / medium",
+    "duration": "738.2 s",
+    "condition": "Visibility-gated simulator semantics | No online image recognition",
+    "notes": [
+      "A successful historical GPT-6 runtime example.",
+      "Object identity and position come from the simulator, subject to visibility.",
+      "Selected success; the four-run set also contains one incomplete run."
+    ],
+    "attempts": "122 skill attempts / 28 task operations"
+  },
+  {
+    "id": "gpt56-visual",
+    "title": "From visual search to task completion.",
+    "model": "GPT-5.6 / low",
+    "duration": "993.6 s",
+    "condition": "Full visual pipeline | Starts with unknown objects and map",
+    "notes": [
+      "Task decomposition, correction and concurrency review: GPT-5.6 low.",
+      "Recognition, action selection and exploration: Qwen3.5-4B.",
+      "One full run; paired Qwen task-model run: 1,255.4 s."
+    ],
+    "attempts": "117 skill attempts / 24 task operations"
+  },
+  {
+    "id": "known-state",
+    "title": "After discovery: execute and recover.",
+    "model": "Qwen3.8 Flash Next / BF16",
+    "duration": "315.6 s",
+    "condition": "Restored checkpoint | 12 known objects, full map, 3 prior successes",
+    "notes": [
+      "Initial plan and earlier progress are restored. This is remaining-task time.",
+      "Routine discovery starts disabled. A newly produced item can trigger a local check.",
+      "Task corrections and concurrency review remain enabled."
+    ],
+    "attempts": "23 skill attempts / 20 task operations"
+  }
+]
