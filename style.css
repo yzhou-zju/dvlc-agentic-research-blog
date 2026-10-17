@@ -37,3 +37,16 @@
 .archive-feature [hidden]{display:none!important}
 
 .robot-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0 28px}.robot-clip{min-width:0}.robot-clip video{aspect-ratio:1120/760;object-fit:contain}.robot-clip figcaption{padding:13px 14px}.robot-clip figcaption strong{font-size:13px}.robot-clip figcaption p{font-size:11px;line-height:1.65;margin:6px 0}.robot-clip .clip-source{font-size:10px;margin:0 0 7px}.robot-clip figcaption a{font-size:11px}@media(max-width:850px){.robot-video-grid{grid-template-columns:1fr}}
+
+/* Two-scene validation uses the original complete films and short, attributed excerpts. */
+.scene-table{min-width:650px}
+.scene-table th:first-child{width:14%}
+.scene-table td:nth-child(3),.scene-table td:nth-child(4){white-space:nowrap}
+.scene-note{font-size:12px!important;color:var(--muted)!important}
+.scene-films,.scene-clips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:22px 0 28px}
+.scene-films .video-figure,.scene-clips .video-figure{min-width:0}
+.scene-films video,.scene-clips video{aspect-ratio:16/9;object-fit:contain;background:#101b22}
+.scene-films figcaption,.scene-clips figcaption{padding:14px 16px}
+.scene-films figcaption strong,.scene-clips figcaption strong{font-size:13px}
+.scene-films figcaption p,.scene-clips figcaption p{font-size:11px;line-height:1.7;margin:5px 0 8px}
+@media(max-width:850px){.scene-films,.scene-clips{grid-template-columns:1fr}}

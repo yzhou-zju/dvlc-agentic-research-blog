@@ -1,0 +1,81 @@
+{
+  "description": "Recorded complete simulation runs in two different missions; timings are not a cross-scene speed comparison.",
+  "source_archive": "多场景成功.zip",
+  "source_archive_sha256": "2f881fa136062fb8c41ad1149920012ae8a33b7cb7cb868fdad46ca00b9aca61",
+  "task_reasoning_model": "Qwen3.8-Flash-Next",
+  "action_and_exploration_model": "Qwen3.5-4B",
+  "same_frozen_code_in_both_runs": true,
+  "generic_inputs_retained": [
+    "robot capability descriptions",
+    "primitive/device interfaces",
+    "sensor calibration",
+    "navigation-grid extent",
+    "observations and action feedback"
+  ],
+  "mission_specific_setup": "Task text provided; factory delivery location D01 is stated in the task. No prewritten initial object states, hidden IDs, object coordinates, reference images, or task dependencies were supplied to the model catalog.",
+  "scenes": {
+    "police": {
+      "complete": true,
+      "elapsed_s": 887.847,
+      "discovery_elapsed_s": 408.364,
+      "execution_elapsed_s": 479.482,
+      "successful_operations": 24,
+      "navigation_or_execution_failures": 11,
+      "unity_operation_rejections": 0,
+      "skill_counts": {
+        "explore:succeeded": 78,
+        "explore:failed": 4,
+        "pick:failed": 2,
+        "observe:succeeded": 5,
+        "explore:cancelled": 1,
+        "pick:succeeded": 5,
+        "place:succeeded": 5,
+        "interact:succeeded": 8,
+        "place:failed": 2,
+        "navigate:failed": 3,
+        "navigate:succeeded": 1
+      },
+      "video": "assets/scenes/police-full-5x.mp4",
+      "video_sha256": "6456271c4d918d75ef2cdec5b4765ffb720331c1d5969ed0bb3e5465aaa75971",
+      "result_member": "成功运行证据/police/result.json",
+      "review_member": "成功运行证据/police/review_summary.json"
+    },
+    "factory": {
+      "complete": true,
+      "elapsed_s": 769.523,
+      "discovery_elapsed_s": 659.474,
+      "execution_elapsed_s": 110.048,
+      "successful_operations": 12,
+      "navigation_or_execution_failures": 4,
+      "unity_operation_rejections": 0,
+      "skill_counts": {
+        "explore:succeeded": 150,
+        "explore:failed": 4,
+        "pick:succeeded": 3,
+        "place:succeeded": 4,
+        "interact:succeeded": 5
+      },
+      "video": "assets/scenes/factory-full-5x.mp4",
+      "video_sha256": "50c4d6b32c10ef999b5797dd66578f8eecda6c99da2dd3a1096f05e0445b16ac",
+      "result_member": "成功运行证据/factory/result.json",
+      "review_member": "成功运行证据/factory/review_summary.json"
+    }
+  },
+  "factory_clip_sources": [
+    {
+      "clip": "assets/scenes/factory-repair-and-staging.mp4",
+      "full_video_start_s": 26,
+      "full_video_end_s": 51
+    },
+    {
+      "clip": "assets/scenes/factory-power-and-delivery.mp4",
+      "full_video_start_s": 63,
+      "full_video_end_s": 85
+    }
+  ],
+  "limits": [
+    "Only the police and factory scenes with the declared common interfaces were validated.",
+    "The runs contain recorded navigation/execution failures and waits; completion does not mean all runtime issues were removed.",
+    "The tasks differ in goals and dependency length, so elapsed times cannot rank scene difficulty or model performance."
+  ]
+}
