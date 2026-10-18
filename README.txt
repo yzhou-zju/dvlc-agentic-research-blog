@@ -43,7 +43,7 @@ Latest architecture revision:
 - The dedicated GPT-6 Astra historical-results section is removed from both language editions; source metrics remain in the evidence manifest.
 
 Two-scene update (October 17, 2026):
-- Factory clips are integrated into Section 04 highlights; the complete 5x factory and police films and their metrics use the existing Section 05 experiment selector. No separate cross-scene section remains.
+- Section 04 now shows a full-length 2x2 four-camera factory edit alongside the retained 2x2 archived experiment. Its two factory event clips appear at full article width. The complete 5x factory and police films and metrics remain in Section 05; video selectors and collaboration thumbnails are visible without expanding details. The additional experiment subsection is labeled “More experiment recordings.” The factory edit is derived from the recorded full film, not a rerun; see assets/scenes/factory-four-camera-provenance.json.
 - The police run completed in 887.847 seconds; factory in 769.523 seconds. Their tasks differ, so this is not a speed comparison.
 - The latest factory and police runs used Qwen3.8 Flash Next for online subtask decomposition, correction and parallel-option reasoning, and Qwen3.5-4B for action/exploration. GPT-6 Astra revised code and tests in the RSI-inspired research loop; it did not perform runtime subtask reasoning in these runs. Older films retain their actual model labels.
 

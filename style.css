@@ -85,3 +85,7 @@
 .origin-feature figcaption p{margin-bottom:7px}
 
 .archive-subsection{margin-top:34px;padding-top:4px;border-top:1px solid var(--line)}
+
+.factory-four-camera-feature{margin:20px 0 26px}.factory-four-camera-feature video{aspect-ratio:4/3;object-fit:contain;background:#0d1d29}#highlights .scene-clips{grid-template-columns:1fr}#highlights .scene-clips figcaption strong{font-size:15px}#highlights .scene-clips figcaption p{font-size:13px}.visible-highlight-selection{margin-top:24px}.additional-film-tabs{margin:16px 0 20px}.selector-label{font-size:12px;color:var(--muted);margin:0 0 8px}
+
+#highlights .focus-extra-clips .scene-clips{grid-template-columns:repeat(2,minmax(0,1fr))}#highlights .focus-extra-clips .scene-clips figcaption strong{font-size:13px}#highlights .focus-extra-clips .scene-clips figcaption p{font-size:11px}.focus-extra-clips{margin-top:26px}@media(max-width:850px){#highlights .focus-extra-clips .scene-clips{grid-template-columns:1fr}}

@@ -1,0 +1,44 @@
+{
+  "source": "assets/scenes/factory-full-5x.mp4",
+  "source_sha256": "50c4d6b32c10ef999b5797dd66578f8eecda6c99da2dd3a1096f05e0445b16ac",
+  "derived_video": "assets/scenes/factory-four-camera-5x.mp4",
+  "derived_video_sha256": "2eebd5e03cce9cc604ca8f34a8d82c32bb27c61d6958b237131f9348f39f0b6d",
+  "poster": "assets/scenes/factory-four-camera-poster.jpg",
+  "duration_seconds": 154.722222,
+  "playback": "5x inherited from source; no additional speed change",
+  "composition": "Source four robot panels cropped including each recorded robot label and shared-subtask strip; arranged 2x2. No simulator rerun or new task result.",
+  "source_crop_rectangles_xywh": [
+    [
+      8,
+      714,
+      470,
+      360
+    ],
+    [
+      486,
+      714,
+      470,
+      360
+    ],
+    [
+      964,
+      714,
+      470,
+      360
+    ],
+    [
+      1442,
+      714,
+      470,
+      360
+    ]
+  ],
+  "output_panel_size": [
+    640,
+    480
+  ],
+  "output_video_size": [
+    1280,
+    960
+  ]
+}
