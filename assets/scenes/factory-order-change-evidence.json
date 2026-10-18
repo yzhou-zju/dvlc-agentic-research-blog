@@ -1,0 +1,58 @@
+{
+  "case": "Factory order quantity revised during execution: one valve-pipe unit to two",
+  "scope": "A separate code revision with opt-in mission update, not the same frozen code used in the original factory and police rows.",
+  "trigger": "Repair and first pipe/valve staging complete; power not connected and processing not started.",
+  "result": {
+    "complete": true,
+    "elapsed_s": 1427.546,
+    "initial_targets_found_s": 785.054,
+    "successful_nonexploration_operations": 19,
+    "required_count": 2,
+    "loaded_count": 4,
+    "produced_count": 2,
+    "delivered_count": 2,
+    "shutdown": true,
+    "disconnected": true
+  },
+  "runtime_models": {
+    "task_reasoning_and_correction": "Qwen3.8 Flash Next",
+    "action_exploration_and_visual_perception": "Qwen3.5-4B, new service in this run"
+  },
+  "events": [
+    {
+      "event": "mission_update_received",
+      "elapsed_s": 423.9
+    },
+    {
+      "event": "equipment_order_updated",
+      "elapsed_s": 435.5
+    },
+    {
+      "event": "mission_update_activated",
+      "elapsed_s": 435.6
+    },
+    {
+      "event": "mission_update_plan_applied",
+      "elapsed_s": 464.5
+    }
+  ],
+  "test_scope": {
+    "offline_regression_passed": 682,
+    "unity_component_checks_passed": 78,
+    "visual_fixture_images_passed": 384,
+    "ordinary_factory_and_police_end_to_end_on_revised_code": "not rerun"
+  },
+  "limitations": [
+    "Earlier three full attempts did not complete and prompted fixes to the order receipt, monitor quota, and perception shutdown.",
+    "Exploration and visual recheck failures occurred and recovered; the second pipe search was slow.",
+    "This case validates a quantity revision at one interruption point, not arbitrary mission edits."
+  ],
+  "film": {
+    "filename": "factory-order-change-5x.mp4",
+    "playback_speed": 5,
+    "duration_s": 286.334,
+    "source_filename": "新4B_自动中断完整成功_5倍速.mp4",
+    "source_sha256": "e9c9630276455840c28c0d7a9cdc94ad450985d10020407f75222660242f5e7a",
+    "edit": "Copied unchanged from the recorded 5x film. Poster captured near the update event."
+  }
+}

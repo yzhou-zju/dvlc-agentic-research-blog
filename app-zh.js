@@ -11,6 +11,7 @@ document.querySelectorAll('[data-origin]').forEach(button=>button.addEventListen
 }));
 const demos={
  'factory':{tag:'当前系统 · 完整任务 · 5×',title:'工厂 · 769.5 秒 · 已完成',description:'维修、并行备料、装配、交付及停机断电；保留原始仿真界面。',src:'assets/scenes/factory-full-5x.mp4',poster:'assets/scenes/factory-poster.jpg',current:true},
+ 'factory-update':{tag:'扩展系统 · 运行中改订单 · 5×',title:'工厂 · 1→2 套 · 1427.5 秒 · 已完成',description:'首套备料和维修完成后暂停接电，保留已完成操作，补齐第二套材料并交付 2/2。原始界面为中文；与双场景实验不是同一冻结代码版本。',src:'assets/scenes/factory-order-change-5x.mp4',poster:'assets/scenes/factory-order-change-poster.jpg',current:true},
  'police':{tag:'当前系统 · 完整任务 · 5×',title:'警局 · 887.8 秒 · 已完成',description:'任务单、诊断、维修、质检与交付；保留原始仿真界面。',src:'assets/scenes/police-full-5x.mp4',poster:'assets/scenes/police-poster.jpg',current:true},
  'gpt56-semantic':{tag:'仿真器语义观测 · 早期实验',title:'GPT-5.6 medium · 578.6 秒 · 已完成',description:'仿真语义观测，无在线图像识别。',src:'assets/zh/gpt56-semantic.mp4',poster:'assets/zh/gpt56-semantic.jpg'},
  'gpt6-semantic':{tag:'仿真器语义观测 · 早期实验',title:'GPT-6 Astra medium · 738.2 秒 · 已完成',description:'仿真语义观测，无在线图像识别。',src:'assets/zh/gpt6-semantic.mp4?v=3',poster:'assets/zh/gpt6-semantic.jpg?v=3'},
