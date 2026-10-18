@@ -77,5 +77,16 @@
     "Only the police and factory scenes with the declared common interfaces were validated.",
     "The runs contain recorded navigation/execution failures and waits; completion does not mean all runtime issues were removed.",
     "The tasks differ in goals and dependency length, so elapsed times cannot rank scene difficulty or model performance."
-  ]
+  ],
+  "expected_task_flows": {
+    "scope": "Derived from the user-provided mission briefs; dependency diagrams, not measured event timelines or model output.",
+    "factory": {
+      "zh": "assets/scenes/factory-flow-zh.svg",
+      "en": "assets/scenes/factory-flow-en.svg"
+    },
+    "police": {
+      "zh": "assets/scenes/police-flow-zh.svg",
+      "en": "assets/scenes/police-flow-en.svg"
+    }
+  }
 }

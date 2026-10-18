@@ -52,3 +52,17 @@
 #experiment-video.current-scene{aspect-ratio:16/9}
 .fragment-alias{display:block;height:0;overflow:hidden}
 @media(max-width:850px){.scene-clips{grid-template-columns:1fr}}
+
+/* Task dependencies sit beside the selected complete recording. */
+.mission-context[hidden]{display:none}
+.mission-flow{margin:0 0 20px;border:1px solid var(--line);background:#fbfcfd}
+.mission-flow figcaption{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;padding:15px 18px;border-bottom:1px solid var(--line)}
+.mission-flow figcaption strong{font-size:13px}
+.mission-flow figcaption span{font-size:11px;line-height:1.6;color:var(--muted)}
+.mission-flow>a{display:block;overflow-x:auto;padding:18px;text-align:center}
+.mission-flow img{display:block;width:100%;max-width:800px;height:auto;margin:auto}
+.mission-text{margin:16px 0 14px}
+.mission-text summary{padding:11px 2px;font-size:12px}
+.mission-text .detail-body{padding:3px 2px 14px}
+.mission-text .detail-body p{font-size:12px;line-height:1.8;margin:0 0 10px}
+@media(max-width:760px){.mission-flow>a{padding:12px}.mission-flow img{min-width:720px}.mission-flow figcaption{padding:12px}.mission-flow figcaption span{font-size:10px}}

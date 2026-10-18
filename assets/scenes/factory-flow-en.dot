@@ -1,0 +1,23 @@
+digraph mission {
+ graph [rankdir=TB, bgcolor="transparent", pad="0.15", nodesep="0.28", ranksep="0.38", splines=polyline, outputorder=edgesfirst];
+ node [shape=box, style="rounded,filled", color="#a8bdc8", fillcolor="#f4f8fa", fontcolor="#233d4a", fontname="Noto Sans CJK SC", fontsize=12, margin="0.14,0.10"];
+ edge [color="#6b8795", penwidth=1.2, arrowsize=0.65];
+
+ discover [label="Initially: M01 isolated, hatch open, power off\nExplore M01 · C01 · D01 · K01 · one E / P / V", fillcolor="#e6f0f5"];
+ repair [label="Install whole K01 repair kit\nin M01 repair slot"];
+ pipe [label="Select one pipe\nload staging fixture"];
+ valve [label="Select one valve\nload staging fixture"];
+ chosen [label="Confirm selected\nE01 / E02 / E03"];
+ ready [label="Repair complete ∧ pipe loaded ∧ valve loaded", fillcolor="#e4f1e9", color="#8ab49b"];
+ power [label="Connect selected power", fillcolor="#e4f1e9", color="#8ab49b"];
+ assemble [label="Start assembly · produce valve–pipe unit"];
+ tray [label="Pull M01 output tray\nretriever now holds product", fillcolor="#fff2df", color="#d3ad75"];
+ delivery [label="Retriever delivers to D01\nno second search or pickup"];
+ shutdown [label="Shut down at C01"];
+ unplug [label="Unplug the connector actually used"];
+ {rank=same; repair; pipe; valve; chosen}
+ discover -> {repair pipe valve chosen};
+ repair -> ready; pipe -> ready; valve -> ready;
+ ready -> power; chosen -> power;
+ power -> assemble -> tray -> delivery -> shutdown -> unplug;
+}

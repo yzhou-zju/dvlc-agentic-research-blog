@@ -10,6 +10,7 @@ document.querySelectorAll('[data-demo]').forEach(button=>button.addEventListener
  const data=demos[button.dataset.demo],video=document.querySelector('#experiment-video');
  video.pause();video.poster=data.poster;video.src=data.src;video.classList.toggle('current-scene',Boolean(data.current));video.setAttribute('aria-label',data.title);video.load();
  document.querySelectorAll('[data-demo]').forEach(b=>{const selected=b===button;b.classList.toggle('active',selected);b.setAttribute('aria-pressed',String(selected));});
+ document.querySelectorAll('[data-mission-panel]').forEach(panel=>{panel.hidden=panel.dataset.missionPanel!==button.dataset.demo;});
  document.querySelector('#demo-tag').textContent=data.tag;document.querySelector('#demo-title').textContent=data.title;document.querySelector('#demo-description').textContent=data.description;document.querySelector('#demo-download').href=data.src;
 }));
 const sections=[...document.querySelectorAll('article>section')];

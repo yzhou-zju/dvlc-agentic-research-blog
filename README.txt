@@ -43,3 +43,8 @@ Two-scene update (October 17, 2026):
 - Factory clips are integrated into Section 04 highlights; the complete 5x factory and police films and their metrics use the existing Section 05 experiment selector. No separate cross-scene section remains.
 - The police run completed in 887.847 seconds; factory in 769.523 seconds. Their tasks differ, so this is not a speed comparison.
 - The latest runs used Qwen3.8 Flash Next for task reasoning and Qwen3.5-4B for action/exploration; GPT-6 Astra remains the research-loop coding agent. Older films retain their source model labels.
+
+Mission-flow diagrams (October 18, 2026):
+- The existing experiment-film selector now shows the selected police or factory mission brief and an expected dependency graph in both languages.
+- SVG graphs and Graphviz source files in assets/scenes/ are derived from the provided mission texts. They describe prerequisites and allowed parallel branches, not the measured sequence or timing of either run.
+- Earlier films hide the new mission panels; the full task briefs remain expandable to keep the report concise.

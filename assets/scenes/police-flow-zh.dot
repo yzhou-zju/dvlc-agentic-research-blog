@@ -1,0 +1,31 @@
+digraph mission {
+ graph [rankdir=TB, bgcolor="transparent", pad="0.15", nodesep="0.28", ranksep="0.38", splines=polyline, outputorder=edgesfirst];
+ node [shape=box, style="rounded,filled", color="#a8bdc8", fillcolor="#f4f8fa", fontcolor="#233d4a", fontname="Noto Sans CJK SC", fontsize=12, margin="0.14,0.10"];
+ edge [color="#6b8795", penwidth=1.2, arrowsize=0.65];
+
+ discover [label="探索未知位置\nORDER · CUTTER · CONTROL · KEY · PERMIT\nPOWER · DELIVERY · 模块 · 毛坯", fillcolor="#e6f0f5"];
+ order [label="读 ORDER\n确定 B-AL / B-CU"];
+ diagnosis [label="现场诊断\n确定 M-17 / M-23 / M-41"];
+ isolate [label="确认 POWER 未接\n确认断电并隔离"];
+ permit [label="PERMIT 送到 CONTROL 登记\n可与检修并行", fillcolor="#fff2df", color="#d3ad75"];
+ access [label="KEY 插入 → 转锁 → 开维修舱"];
+ module [label="更换匹配维修模块"];
+ blank [label="装入匹配毛坯"];
+ power [label="接上 POWER"];
+ gate [label="工单已读 ∧ 修好 ∧ 毛坯已装\n供电已接 ∧ 授权已登记", fillcolor="#e4f1e9", color="#8ab49b"];
+ hold [label="机器人 A 持续按住授权按钮", fillcolor="#fff2df", color="#d3ad75"];
+ start [label="机器人 B 启动切割机\nA 此时仍按住", fillcolor="#fff2df", color="#d3ad75"];
+ release [label="确认启动成功 → A 松开"];
+ inspect [label="加工完成 → 检查 KEYS 合格"];
+ deliver [label="取走合格钥匙 → DELIVERY 交付"];
+ shutdown [label="CONTROL 停机"];
+ unplug [label="最后拔掉 POWER"];
+ {rank=same; order; diagnosis; isolate; permit}
+ discover -> {order diagnosis isolate permit};
+ isolate -> access -> module;
+ diagnosis -> module;
+ order -> blank;
+ module -> blank -> power;
+ order -> gate; power -> gate; permit -> gate;
+ gate -> hold -> start -> release -> inspect -> deliver -> shutdown -> unplug;
+}

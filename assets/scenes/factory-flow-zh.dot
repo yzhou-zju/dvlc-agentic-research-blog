@@ -1,0 +1,23 @@
+digraph mission {
+ graph [rankdir=TB, bgcolor="transparent", pad="0.15", nodesep="0.28", ranksep="0.38", splines=polyline, outputorder=edgesfirst];
+ node [shape=box, style="rounded,filled", color="#a8bdc8", fillcolor="#f4f8fa", fontcolor="#233d4a", fontname="Noto Sans CJK SC", fontsize=12, margin="0.14,0.10"];
+ edge [color="#6b8795", penwidth=1.2, arrowsize=0.65];
+
+ discover [label="初始：M01 已隔离、开舱、未接电\n探索 M01 · C01 · D01 · K01 · 任一 E / P / V", fillcolor="#e6f0f5"];
+ repair [label="K01 整件维修箱\n装入 M01 维修槽"];
+ pipe [label="选一根管段\n送入备料夹具"];
+ valve [label="选一只阀门\n送入备料夹具"];
+ chosen [label="确认选用的\nE01 / E02 / E03"];
+ ready [label="维修完成 ∧ 管段装好 ∧ 阀门装好", fillcolor="#e4f1e9", color="#8ab49b"];
+ power [label="接上选定电源", fillcolor="#e4f1e9", color="#8ab49b"];
+ assemble [label="启动装配机 · 做出阀管总成"];
+ tray [label="拉出 M01 出料托盘\n取件者直接持有成品", fillcolor="#fff2df", color="#d3ad75"];
+ delivery [label="由取件者交付至 D01\n不再搜索或二次抓取"];
+ shutdown [label="C01 停机"];
+ unplug [label="拔掉实际连接的电源"];
+ {rank=same; repair; pipe; valve; chosen}
+ discover -> {repair pipe valve chosen};
+ repair -> ready; pipe -> ready; valve -> ready;
+ ready -> power; chosen -> power;
+ power -> assemble -> tray -> delivery -> shutdown -> unplug;
+}
