@@ -83,3 +83,5 @@
 .origin-tabs{margin:0 0 10px}
 .origin-feature video{aspect-ratio:16/9;object-fit:contain;background:#e8ebed}
 .origin-feature figcaption p{margin-bottom:7px}
+
+.archive-subsection{margin-top:34px;padding-top:4px;border-top:1px solid var(--line)}
