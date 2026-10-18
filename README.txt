@@ -13,6 +13,7 @@ Media:
 - Six continuous 3x highlights in assets/highlights/.
 - Archive hashes and highlight timestamps are provided in each folder's manifest.json.
 - Current police and factory complete runs, factory excerpts, and metrics are in assets/scenes/. Both use the same frozen code; see assets/scenes/evidence.json for configuration, provenance, and limits.
+- A short D-VLC collaborative-door excerpt is in assets/dvlc/. Its source and cut boundaries are recorded in assets/dvlc/provenance.json; it is a baseline demonstration outside the two current mission evaluations.
 
 The original videos preserve their Chinese interface. Recognition examples come from the predictive-preparation full visual run; semantic-observation examples are explicitly identified. These older examples are archived experiments. The two-scene validation in assets/scenes/ uses the later successful police and factory runs. The predictive pickup switch triggered zero times in the 896.1-second full run; its speed cannot be attributed to that feature.
 
@@ -45,6 +46,6 @@ Two-scene update (October 17, 2026):
 - The latest runs used Qwen3.8 Flash Next for task reasoning and Qwen3.5-4B for action/exploration; GPT-6 Astra remains the research-loop coding agent. Older films retain their source model labels.
 
 Mission-flow diagrams (October 18, 2026):
-- The existing experiment-film selector now shows the selected police or factory mission brief and an expected dependency graph in both languages.
+- The experiment-film selector places a compact expected task flow beside each complete police or factory film, with the full mission brief below. The two missions are peer examples of the same algorithm's applicability across different task structures.
 - SVG graphs and Graphviz source files in assets/scenes/ are derived from the provided mission texts. They describe prerequisites and allowed parallel branches, not the measured sequence or timing of either run.
 - Earlier films hide the new mission panels; the full task briefs remain expandable to keep the report concise.

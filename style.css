@@ -53,16 +53,32 @@
 .fragment-alias{display:block;height:0;overflow:hidden}
 @media(max-width:850px){.scene-clips{grid-template-columns:1fr}}
 
-/* Task dependencies sit beside the selected complete recording. */
-.mission-context[hidden]{display:none}
-.mission-flow{margin:0 0 20px;border:1px solid var(--line);background:#fbfcfd}
-.mission-flow figcaption{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;padding:15px 18px;border-bottom:1px solid var(--line)}
-.mission-flow figcaption strong{font-size:13px}
-.mission-flow figcaption span{font-size:11px;line-height:1.6;color:var(--muted)}
-.mission-flow>a{display:block;overflow-x:auto;padding:18px;text-align:center}
-.mission-flow img{display:block;width:100%;max-width:800px;height:auto;margin:auto}
-.mission-text{margin:16px 0 14px}
-.mission-text summary{padding:11px 2px;font-size:12px}
+/* A compact dependency flow sits to the right of each current mission film. */
+.mission-showcase{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(285px,1fr);gap:14px;align-items:start;margin-top:16px}
+.mission-showcase>.video-figure,.mission-flow-side{min-width:0}
+.mission-showcase.historical{display:block}
+.mission-showcase.historical .mission-flow-side{display:none}
+.compact-flow[hidden],.mission-brief[hidden]{display:none!important}
+.compact-flow{margin:0;border:1px solid var(--line);background:#fbfcfd}
+.compact-flow figcaption{padding:11px 13px;border-bottom:1px solid var(--line)}
+.compact-flow figcaption strong{display:block;font-size:12px;line-height:1.45}
+.compact-flow figcaption span{display:block;margin-top:2px;color:var(--muted);font-size:10px;line-height:1.4}
+.flow-steps{list-style:none;counter-reset:step;margin:0;padding:8px 12px 3px}
+.flow-steps li{position:relative;display:flex;flex-direction:column;gap:3px;padding:6px 7px 6px 27px;border:1px solid #dce2e6;background:#fff;color:#3c4850;font-size:10px;line-height:1.45}
+.flow-steps li+li{margin-top:14px}
+.flow-steps li+li:before{content:"↓";position:absolute;left:calc(50% - 5px);top:-17px;color:#526a79;font-size:13px;line-height:1}
+.flow-steps li:after{counter-increment:step;content:counter(step);position:absolute;left:8px;top:6px;font-size:10px;font-weight:700;color:#36566a}
+.flow-steps li>b{font-size:10px;line-height:1.35;color:#253e4e}
+.flow-parallel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px}
+.compact-flow[data-mission-panel="factory"] .flow-parallel{grid-template-columns:repeat(3,minmax(0,1fr))}
+.flow-parallel span{padding:4px 3px;border-left:2px solid #9ab0bd;background:#f2f6f8;overflow-wrap:anywhere}
+.compact-flow>a{display:block;padding:3px 13px 10px;font-size:10px}
+.mission-text{margin:14px 0 0}
+.mission-text summary{padding:9px 2px;font-size:12px}
 .mission-text .detail-body{padding:3px 2px 14px}
 .mission-text .detail-body p{font-size:12px;line-height:1.8;margin:0 0 10px}
-@media(max-width:760px){.mission-flow>a{padding:12px}.mission-flow img{min-width:720px}.mission-flow figcaption{padding:12px}.mission-flow figcaption span{font-size:10px}}
+@media(max-width:960px){.mission-showcase{grid-template-columns:1fr}.mission-flow-side{width:100%}.flow-steps li{font-size:11px}.flow-parallel{gap:6px}}
+
+.baseline-clip{margin:22px 0 26px}
+.baseline-clip video{aspect-ratio:16/9;object-fit:contain;background:#e8ebed}
+.baseline-clip figcaption p{margin-bottom:0}
