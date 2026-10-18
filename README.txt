@@ -10,7 +10,7 @@ Media:
 - Four English camera remasters in assets/.
 - Four corresponding Chinese camera remasters in assets/zh/.
 - Five byte-identical original 3x cooperation-window recordings in assets/archive/.
-- The historical 2x2 four-camera remaster is directly playable in Section 06, alongside the map-and-task-graph reframing. Chinese and English edits are in assets/zh/gpt6-semantic.mp4 and assets/gpt6-semantic.mp4.
+- The historical 2x2 four-camera remaster is directly playable in Section 04; Section 06 retains the map-and-task-graph reframing. Chinese and English edits are in assets/zh/gpt6-semantic.mp4 and assets/gpt6-semantic.mp4.
 - Six continuous 3x highlights in assets/highlights/.
 - Archive hashes and highlight timestamps are provided in each folder's manifest.json.
 - Current police and factory complete runs, factory excerpts, and metrics are in assets/scenes/. Both use the same frozen code; see assets/scenes/evidence.json for configuration, provenance, and limits.
