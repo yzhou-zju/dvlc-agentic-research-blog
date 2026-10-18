@@ -79,6 +79,7 @@
 .mission-text .detail-body p{font-size:12px;line-height:1.8;margin:0 0 10px}
 @media(max-width:960px){.mission-showcase{grid-template-columns:1fr}.mission-flow-side{width:100%}.flow-steps li{font-size:11px}.flow-parallel{gap:6px}}
 
-.baseline-clip{margin:22px 0 26px}
-.baseline-clip video{aspect-ratio:16/9;object-fit:contain;background:#e8ebed}
-.baseline-clip figcaption p{margin-bottom:0}
+.origin-gallery{margin:22px 0 30px}
+.origin-tabs{margin:0 0 10px}
+.origin-feature video{aspect-ratio:16/9;object-fit:contain;background:#e8ebed}
+.origin-feature figcaption p{margin-bottom:7px}

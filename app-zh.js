@@ -1,3 +1,14 @@
+const originClips={
+ 'home':{title:'家居环境分散探索',description:'家具环境中的多机器人探索与目标发现；原始演示录像已为 4 倍速。',src:'assets/dvlc/home-exploration-4x.mp4',poster:'assets/dvlc/home-exploration-poster.jpg'},
+ 'door-team':{title:'协作开门 · 全局视图',description:'无人机发现门并请求移动机械臂协助；开门后继续探索。原始演示录像已为 4 倍速。',src:'assets/dvlc/door-assistance-4x.mp4',poster:'assets/dvlc/door-assistance-poster.jpg'},
+ 'door-closeup':{title:'协作开门 · 门体近景',description:'从另一段原始 Unity 录屏截取门体动作近景；与全局视图不是同步机位。',src:'assets/dvlc/door-closeup.mp4',poster:'assets/dvlc/door-closeup-poster.jpg'}
+};
+document.querySelectorAll('[data-origin]').forEach(button=>button.addEventListener('click',()=>{
+ const data=originClips[button.dataset.origin],video=document.querySelector('#origin-video');
+ video.pause();video.poster=data.poster;video.src=data.src;video.setAttribute('aria-label',data.title);video.load();
+ document.querySelectorAll('[data-origin]').forEach(b=>{const selected=b===button;b.classList.toggle('active',selected);b.setAttribute('aria-pressed',String(selected));});
+ document.querySelector('#origin-title').textContent=data.title;document.querySelector('#origin-description').textContent=data.description;
+}));
 const demos={
  'factory':{tag:'当前系统 · 完整任务 · 5×',title:'工厂 · 769.5 秒 · 已完成',description:'维修、并行备料、装配、交付及停机断电；保留原始仿真界面。',src:'assets/scenes/factory-full-5x.mp4',poster:'assets/scenes/factory-poster.jpg',current:true},
  'police':{tag:'当前系统 · 完整任务 · 5×',title:'警局 · 887.8 秒 · 已完成',description:'任务单、诊断、维修、质检与交付；保留原始仿真界面。',src:'assets/scenes/police-full-5x.mp4',poster:'assets/scenes/police-poster.jpg',current:true},

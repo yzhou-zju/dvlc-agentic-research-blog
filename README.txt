@@ -13,7 +13,7 @@ Media:
 - Six continuous 3x highlights in assets/highlights/.
 - Archive hashes and highlight timestamps are provided in each folder's manifest.json.
 - Current police and factory complete runs, factory excerpts, and metrics are in assets/scenes/. Both use the same frozen code; see assets/scenes/evidence.json for configuration, provenance, and limits.
-- A short D-VLC collaborative-door excerpt is in assets/dvlc/. Its source and cut boundaries are recorded in assets/dvlc/provenance.json; it is a baseline demonstration outside the two current mission evaluations.
+- Three short D-VLC source excerpts are in assets/dvlc/: furnished-home exploration, the shared door-assistance view, and a separate Unity close-up of the door. Their sources and cut boundaries are recorded in assets/dvlc/provenance.json. They are predecessor demonstrations outside the two current mission evaluations.
 
 The original videos preserve their Chinese interface. Recognition examples come from the predictive-preparation full visual run; semantic-observation examples are explicitly identified. These older examples are archived experiments. The two-scene validation in assets/scenes/ uses the later successful police and factory runs. The predictive pickup switch triggered zero times in the 896.1-second full run; its speed cannot be attributed to that feature.
 
@@ -32,6 +32,7 @@ Report revision:
 
 Current presentation:
 - Restrained technical-report layout with no images in the research background. Original D-VLC figures are in the source appendix.
+- Section 02 places selectable D-VLC home and door footage before the GPT-assisted research-loop account, so the predecessor system and subsequent software evolution appear in order.
 - Concrete R0-R3 code-and-evaluation iteration, including the extended completion criterion and rollback evidence; see assets/iteration-evidence.json.
 - Factory and police complete runs are the main video examples in Section 05. Four historical outcomes remain in assets/evidence.json and the older films remain selectable.
 - GPT-5.6 measurements and recordings remain under historical disclosures with their original model attribution.

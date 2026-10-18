@@ -1,3 +1,14 @@
+const originClips={
+ 'home':{title:'Distributed exploration in a furnished home',description:'Multi-robot exploration and target discovery in a furnished home; the original demonstration film is already 4× speed.',src:'assets/dvlc/home-exploration-4x.mp4',poster:'assets/dvlc/home-exploration-poster.jpg'},
+ 'door-team':{title:'Collaborative door opening · team view',description:'A UAV finds a door and requests mobile-manipulator assistance; exploration continues after it opens. The original demonstration film is already 4× speed.',src:'assets/dvlc/door-assistance-4x.mp4',poster:'assets/dvlc/door-assistance-poster.jpg'},
+ 'door-closeup':{title:'Collaborative door opening · close-up',description:'The door action is excerpted from a separate original Unity recording; it is not a synchronized camera of the team-view clip.',src:'assets/dvlc/door-closeup.mp4',poster:'assets/dvlc/door-closeup-poster.jpg'}
+};
+document.querySelectorAll('[data-origin]').forEach(button=>button.addEventListener('click',()=>{
+ const data=originClips[button.dataset.origin],video=document.querySelector('#origin-video');
+ video.pause();video.poster=data.poster;video.src=data.src;video.setAttribute('aria-label',data.title);video.load();
+ document.querySelectorAll('[data-origin]').forEach(b=>{const selected=b===button;b.classList.toggle('active',selected);b.setAttribute('aria-pressed',String(selected));});
+ document.querySelector('#origin-title').textContent=data.title;document.querySelector('#origin-description').textContent=data.description;
+}));
 const demos={
  'factory':{tag:'CURRENT SYSTEM · COMPLETE RUN · 5×',title:'Factory · 769.5 s · completed',description:'Repair, parallel staging, assembly, delivery, shutdown, and disconnection. Original simulator UI.',src:'assets/scenes/factory-full-5x.mp4',poster:'assets/scenes/factory-poster.jpg',current:true},
  'police':{tag:'CURRENT SYSTEM · COMPLETE RUN · 5×',title:'Police · 887.8 s · completed',description:'Work order, diagnosis, repair, inspection, and delivery. Original simulator UI.',src:'assets/scenes/police-full-5x.mp4',poster:'assets/scenes/police-poster.jpg',current:true},

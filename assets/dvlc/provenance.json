@@ -1,9 +1,29 @@
 {
-  "asset": "door-assistance-4x.mp4",
-  "source": "user-provided D-VLC presentation play.pptx, embedded ppt/media/media1.mp4",
-  "source_interval_seconds": [67, 80],
-  "source_speed": "4x, as burned into the source recording",
-  "processing": "13-second excerpt transcoded to H.264 for browser playback; audio removed; 1600-pixel width; poster extracted from excerpt at 1.5 seconds",
-  "description": "A UAV detects a door and requests assistance; the mobile manipulator opens it, enabling further exploration.",
-  "scope": "Original D-VLC demonstration; not part of the current factory or police evaluation runs."
+  "scope": "Original D-VLC demonstrations, preceding and outside the current factory and police evaluations.",
+  "clips": [
+    {
+      "asset": "home-exploration-4x.mp4",
+      "source": "user-provided D-VLC presentation play.pptx, embedded ppt/media/media1.mp4",
+      "source_interval_seconds": [16, 38],
+      "source_speed": "4x, burned into the source recording",
+      "processing": "22-second excerpt transcoded to H.264 for browser playback; audio removed; 1600-pixel width",
+      "description": "Furnished-home exploration and target discovery by a heterogeneous team."
+    },
+    {
+      "asset": "door-assistance-4x.mp4",
+      "source": "user-provided D-VLC presentation play.pptx, embedded ppt/media/media1.mp4",
+      "source_interval_seconds": [67, 80],
+      "source_speed": "4x, burned into the source recording",
+      "processing": "13-second excerpt transcoded to H.264 for browser playback; audio removed; 1600-pixel width",
+      "description": "A UAV detects a door and requests assistance; the mobile manipulator opens it, enabling further exploration."
+    },
+    {
+      "asset": "door-closeup.mp4",
+      "source": "user-provided Feishu recording 飞书20261018-134242.mp4",
+      "source_interval_seconds": [65, 85],
+      "source_speed": "original recording speed",
+      "processing": "20-second Unity-view excerpt cropped to source rectangle x=120, y=190, width=1280, height=720, transcoded to H.264; audio removed",
+      "description": "Close view of a door opening from a separate original recording; not a synchronized camera of the team-view clip."
+    }
+  ]
 }
