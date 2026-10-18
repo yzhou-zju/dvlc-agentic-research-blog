@@ -26,13 +26,13 @@ Report revision:
 - Four-stage framework evolution with GPT-6 Astra engineering roles, validation, retained changes and reversions.
 - Original D-VLC Figures 1, 2 and 4 cropped directly from the paper PDF, with attribution under CC BY 4.0; assets/paper/manifest.json records provenance.
 - Six annotated local event stills and continuous 3x clips in assets/focus/, featuring top-down maps and robot cameras. Event log timestamps and crop coordinates are provided.
-- Section 05 opens with the humanoid video and adds directly playable R0, R1, and R2 excerpts, each with a direct MP4 link. The original recordings remain available separately.
+- Section 04 includes factory excerpts and the humanoid video and adds directly playable R0, R1, and R2 excerpts, each with a direct MP4 link. The original recordings remain available separately.
 - In the default complete cooperation-window remaster, the robot symbols on the colored shared map are doubled from approximately 22 to 44 pixels. The overlay follows icon positions detected in archived frames; no robot motion or task state was changed. See assets/gpt6-camera-remaster.json and assets/map-icon-tracking.json.
 
 Current presentation:
 - Restrained technical-report layout with no images in the research background. Original D-VLC figures are in the source appendix.
 - Concrete R0-R3 code-and-evaluation iteration, including the extended completion criterion and rollback evidence; see assets/iteration-evidence.json.
-- GPT-6 Astra is the main video example. The four historical run outcomes remain in assets/evidence.json; the dedicated runtime-results section is removed.
+- Factory and police complete runs are the main video examples in Section 05. Four historical outcomes remain in assets/evidence.json and the older films remain selectable.
 - GPT-5.6 measurements and recordings remain under historical disclosures with their original model attribution.
 
 Latest architecture revision:
@@ -40,6 +40,6 @@ Latest architecture revision:
 - The dedicated GPT-6 Astra historical-results section is removed from both language editions; source metrics remain in the evidence manifest.
 
 Two-scene update (October 17, 2026):
-- Section 04 presents complete 5x police and factory success films plus two clips from the factory film.
+- Factory clips are integrated into Section 04 highlights; the complete 5x factory and police films and their metrics use the existing Section 05 experiment selector. No separate cross-scene section remains.
 - The police run completed in 887.847 seconds; factory in 769.523 seconds. Their tasks differ, so this is not a speed comparison.
 - The latest runs used Qwen3.8 Flash Next for task reasoning and Qwen3.5-4B for action/exploration; GPT-6 Astra remains the research-loop coding agent. Older films retain their source model labels.
