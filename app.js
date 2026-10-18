@@ -1,7 +1,7 @@
 const originClips={
  'home':{title:'Distributed exploration in a furnished home',description:'Multi-robot exploration and target discovery in a furnished home; the original demonstration film is already 4× speed.',src:'assets/dvlc/home-exploration-4x.mp4',poster:'assets/dvlc/home-exploration-poster.jpg'},
  'door-team':{title:'Collaborative door opening · team view',description:'A UAV finds a door and requests mobile-manipulator assistance; exploration continues after it opens. The original demonstration film is already 4× speed.',src:'assets/dvlc/door-assistance-4x.mp4',poster:'assets/dvlc/door-assistance-poster.jpg'},
- 'door-closeup':{title:'Collaborative door opening · close-up',description:'The door action is excerpted from a separate original Unity recording; it is not a synchronized camera of the team-view clip.',src:'assets/dvlc/door-closeup.mp4',poster:'assets/dvlc/door-closeup-poster.jpg'}
+ 'door-closeup':{title:'Door opening and UAV fly-through · 3×',description:'A separate original Unity recording shows the door opening and a UAV flying through, sped up 3×; it is not synchronized with the team-view clip.',src:'assets/dvlc/door-closeup-3x.mp4',poster:'assets/dvlc/door-closeup-3x-poster.jpg'}
 };
 document.querySelectorAll('[data-origin]').forEach(button=>button.addEventListener('click',()=>{
  const data=originClips[button.dataset.origin],video=document.querySelector('#origin-video');

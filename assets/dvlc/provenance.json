@@ -18,12 +18,12 @@
       "description": "A UAV detects a door and requests assistance; the mobile manipulator opens it, enabling further exploration."
     },
     {
-      "asset": "door-closeup.mp4",
+      "asset": "door-closeup-3x.mp4",
       "source": "user-provided Feishu recording 飞书20261018-134242.mp4",
-      "source_interval_seconds": [65, 85],
+      "source_interval_seconds": [65, 128.5],
       "source_speed": "original recording speed",
-      "processing": "20-second Unity-view excerpt cropped to source rectangle x=120, y=190, width=1280, height=720, transcoded to H.264; audio removed",
-      "description": "Close view of a door opening from a separate original recording; not a synchronized camera of the team-view clip."
+      "processing": "Unity view cropped to source rectangle x=120, y=190, width=1280, height=720; video time compressed 3x with 30 fps output, transcoded to H.264; audio removed",
+      "description": "Close view of the door opening and a UAV flying through from a separate original recording; not a synchronized camera of the team-view clip."
     }
   ]
 }

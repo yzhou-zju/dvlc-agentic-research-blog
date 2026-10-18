@@ -1,7 +1,7 @@
 const originClips={
  'home':{title:'家居环境分散探索',description:'家具环境中的多机器人探索与目标发现；原始演示录像已为 4 倍速。',src:'assets/dvlc/home-exploration-4x.mp4',poster:'assets/dvlc/home-exploration-poster.jpg'},
  'door-team':{title:'协作开门 · 全局视图',description:'无人机发现门并请求移动机械臂协助；开门后继续探索。原始演示录像已为 4 倍速。',src:'assets/dvlc/door-assistance-4x.mp4',poster:'assets/dvlc/door-assistance-poster.jpg'},
- 'door-closeup':{title:'协作开门 · 门体近景',description:'从另一段原始 Unity 录屏截取门体动作近景；与全局视图不是同步机位。',src:'assets/dvlc/door-closeup.mp4',poster:'assets/dvlc/door-closeup-poster.jpg'}
+ 'door-closeup':{title:'协作开门 · 开门与无人机飞入 · 3×',description:'独立 Unity 录屏截取开门、无人机穿门飞入的过程，整体加速至 3 倍；与全局视图不是同步机位。',src:'assets/dvlc/door-closeup-3x.mp4',poster:'assets/dvlc/door-closeup-3x-poster.jpg'}
 };
 document.querySelectorAll('[data-origin]').forEach(button=>button.addEventListener('click',()=>{
  const data=originClips[button.dataset.origin],video=document.querySelector('#origin-video');

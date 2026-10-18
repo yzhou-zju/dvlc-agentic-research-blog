@@ -16,12 +16,12 @@ const mediaCatalog={
     },
     "gpt6-semantic": {
       "en": [
-        "GPT-6 Astra · execution",
+        "Archived GPT-6 Astra experiment",
         "GPT-6 Astra medium · 738.2 s · completed",
         "The archived floor maps and task graph remain above four enlarged third-person cameras. Robot icons in the colored shared maps are doubled; recorded shared subtasks replace the lower mini-maps and action descriptions. No simulation rerun."
       ],
       "zh": [
-        "GPT-6 Astra 执行实例",
+        "历史 GPT-6 Astra 实验",
         "GPT-6 Astra medium · 738.2 秒 · 已完成",
         "保留历史录像的楼层俯视图与任务关系图，地图机器人图标放大两倍；下方放大四机第三人称画面，展示录制时的共享子任务；未重跑仿真。"
       ],

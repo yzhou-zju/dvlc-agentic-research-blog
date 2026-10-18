@@ -10,10 +10,11 @@ Media:
 - Four English camera remasters in assets/.
 - Four corresponding Chinese camera remasters in assets/zh/.
 - Five byte-identical original 3x cooperation-window recordings in assets/archive/.
+- The historical 2x2 four-camera remaster is directly playable in Section 06, alongside the map-and-task-graph reframing. Chinese and English edits are in assets/zh/gpt6-semantic.mp4 and assets/gpt6-semantic.mp4.
 - Six continuous 3x highlights in assets/highlights/.
 - Archive hashes and highlight timestamps are provided in each folder's manifest.json.
 - Current police and factory complete runs, factory excerpts, and metrics are in assets/scenes/. Both use the same frozen code; see assets/scenes/evidence.json for configuration, provenance, and limits.
-- Three short D-VLC source excerpts are in assets/dvlc/: furnished-home exploration, the shared door-assistance view, and a separate Unity close-up of the door. Their sources and cut boundaries are recorded in assets/dvlc/provenance.json. They are predecessor demonstrations outside the two current mission evaluations.
+- Three short D-VLC source excerpts are in assets/dvlc/: furnished-home exploration, the shared door-assistance view, and a separate 3x Unity close-up spanning the door opening and UAV fly-through. Their sources and cut boundaries are recorded in assets/dvlc/provenance.json. They are predecessor demonstrations outside the two current mission evaluations.
 
 The original videos preserve their Chinese interface. Recognition examples come from the predictive-preparation full visual run; semantic-observation examples are explicitly identified. These older examples are archived experiments. The two-scene validation in assets/scenes/ uses the later successful police and factory runs. The predictive pickup switch triggered zero times in the 896.1-second full run; its speed cannot be attributed to that feature.
 
@@ -44,7 +45,7 @@ Latest architecture revision:
 Two-scene update (October 17, 2026):
 - Factory clips are integrated into Section 04 highlights; the complete 5x factory and police films and their metrics use the existing Section 05 experiment selector. No separate cross-scene section remains.
 - The police run completed in 887.847 seconds; factory in 769.523 seconds. Their tasks differ, so this is not a speed comparison.
-- The latest runs used Qwen3.8 Flash Next for task reasoning and Qwen3.5-4B for action/exploration; GPT-6 Astra remains the research-loop coding agent. Older films retain their source model labels.
+- The latest factory and police runs used Qwen3.8 Flash Next for online subtask decomposition, correction and parallel-option reasoning, and Qwen3.5-4B for action/exploration. GPT-6 Astra revised code and tests in the RSI-inspired research loop; it did not perform runtime subtask reasoning in these runs. Older films retain their actual model labels.
 
 Mission-flow diagrams (October 18, 2026):
 - The experiment-film selector places a compact expected task flow beside each complete police or factory film, with the full mission brief below. The two missions are peer examples of the same algorithm's applicability across different task structures.
