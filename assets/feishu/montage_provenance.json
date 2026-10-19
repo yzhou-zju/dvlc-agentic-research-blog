@@ -1,0 +1,94 @@
+{
+  "description": "Two Feishu media montages composed from existing recorded films; no robot experiment was rerun and the blog HTML was not edited.",
+  "dvlc_door_global_closeup": {
+    "output": "dvlc_door_global_closeup.mp4",
+    "output_sha256": "7ebdba75bf39addf32a0bfe5f8aa561c66df0b04cfb7f3a7aa27edc9227a7d55",
+    "output_video": {
+      "programs": [],
+      "streams": [
+        {
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "30/1"
+        }
+      ],
+      "format": {
+        "duration": "34.167000",
+        "size": "969170"
+      }
+    },
+    "segments": [
+      {
+        "source": "dvlc/door-assistance-4x.mp4",
+        "source_sha256": "40a07409aaa80f433da07c01d6f5844ffb0ee62106b4c35c46c9bf8be78d8813",
+        "start_s": null,
+        "duration_s": null,
+        "label": "全景任务窗口｜寻找卫生间与协作开门｜原片 4×"
+      },
+      {
+        "source": "dvlc/door-closeup-3x.mp4",
+        "source_sha256": "a1ba41331aa0c7a3959f72710e734020d0ea42ac5d3767c4c7e1f2ca0c541bd9",
+        "start_s": null,
+        "duration_s": null,
+        "label": "独立近景｜开门与无人机飞入｜原片 3×；非同步机位"
+      }
+    ],
+    "caveat": "The close-up is from a separate original recording and is not synchronized with the global view. Segment speed is labeled separately."
+  },
+  "police_four_camera_panorama": {
+    "output": "police_four_camera_panorama.mp4",
+    "output_sha256": "8baaa3a6907f561b48693643ba10f103af7454b35af8855c0dd5f6fc91ecbce8",
+    "output_video": {
+      "programs": [],
+      "streams": [
+        {
+          "width": 1600,
+          "height": 900,
+          "r_frame_rate": "25/1"
+        }
+      ],
+      "format": {
+        "duration": "101.000000",
+        "size": "6006516"
+      }
+    },
+    "segments": [
+      {
+        "source": "archive/gpt6-semantic-swarm-3x.mp4",
+        "source_sha256": "a78221b6409d5f740a2e6204bd9205a0eadcc2772a6183280691ebf3ee7d54e4",
+        "start_s": 20,
+        "duration_s": 12,
+        "label": "历史警局实验｜全景地图与任务图｜原片 00:20–00:32 · 3×"
+      },
+      {
+        "source": "zh/gpt6-semantic.mp4",
+        "source_sha256": "fe51bcdaeb88fcf839a0c35e7e33fb88c128f501997b60fad86647dff0b72e41",
+        "start_s": 45,
+        "duration_s": 25,
+        "label": "历史警局实验｜四机 2×2 探索｜原片 00:45–01:10 · 3×"
+      },
+      {
+        "source": "archive/gpt6-semantic-swarm-3x.mp4",
+        "source_sha256": "a78221b6409d5f740a2e6204bd9205a0eadcc2772a6183280691ebf3ee7d54e4",
+        "start_s": 155,
+        "duration_s": 12,
+        "label": "历史警局实验｜全景任务进度｜原片 02:35–02:47 · 3×"
+      },
+      {
+        "source": "zh/gpt6-semantic.mp4",
+        "source_sha256": "fe51bcdaeb88fcf839a0c35e7e33fb88c128f501997b60fad86647dff0b72e41",
+        "start_s": 185,
+        "duration_s": 32,
+        "label": "历史警局实验｜四机 2×2 操作｜原片 03:05–03:37 · 3×"
+      },
+      {
+        "source": "archive/gpt6-semantic-swarm-3x.mp4",
+        "source_sha256": "a78221b6409d5f740a2e6204bd9205a0eadcc2772a6183280691ebf3ee7d54e4",
+        "start_s": 220,
+        "duration_s": 20,
+        "label": "历史警局实验｜全景收尾进度｜原片 03:40–04:00 · 3×"
+      }
+    ],
+    "caveat": "The same archived GPT-6 Astra medium / 738.2-second semantic-observation run, sampled at selected times. This is not the current Qwen3.8 Flash Next police validation run, and edits skip intervals."
+  }
+}
