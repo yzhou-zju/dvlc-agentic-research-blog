@@ -1,0 +1,124 @@
+{
+  "description": "Feishu-only highlight films cut from archived recordings. The blog HTML/CSS/JS are unchanged; no robot experiment was rerun. Each film has no more than two hard cuts, below the requested maximum of three. On-video labels identify source intervals and acceleration.",
+  "films": {
+    "dvlc_door_global_closeup_40s": {
+      "file": "dvlc_door_global_closeup_40s.mp4",
+      "sha256": "1fc6c479ff598f9907fef7ea69ebfce8f89644fedad444753f22a81838c80e5c",
+      "video": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "38.467000",
+          "size": "1090384"
+        }
+      },
+      "segments": [
+        {
+          "source": "dvlc/door-assistance-4x.mp4",
+          "source_sha256": "40a07409aaa80f433da07c01d6f5844ffb0ee62106b4c35c46c9bf8be78d8813",
+          "start_s": null,
+          "duration_s": null,
+          "speed_relative_to_source": 0.75,
+          "label": "D-VLC｜协作开门全景｜原片 4× 调整为约 3×"
+        },
+        {
+          "source": "dvlc/door-closeup-3x.mp4",
+          "source_sha256": "a1ba41331aa0c7a3959f72710e734020d0ea42ac5d3767c4c7e1f2ca0c541bd9",
+          "start_s": null,
+          "duration_s": null,
+          "speed_relative_to_source": 1,
+          "label": "D-VLC｜独立近景：开门与无人机飞入｜3×，非同步机位"
+        }
+      ],
+      "caveat": "The close-up is a separate unsynchronized original recording. Both final segments are approximately 3x actual speed."
+    },
+    "police_four_camera_panorama_40s": {
+      "file": "police_four_camera_panorama_40s.mp4",
+      "sha256": "754b5836fcb8990db04270aeab7842820edaaa9f7993951f99e0ac197f234f83",
+      "video": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1600,
+            "height": 900,
+            "r_frame_rate": "25/1"
+          }
+        ],
+        "format": {
+          "duration": "40.000000",
+          "size": "2268435"
+        }
+      },
+      "segments": [
+        {
+          "source": "zh/gpt6-semantic.mp4",
+          "source_sha256": "fe51bcdaeb88fcf839a0c35e7e33fb88c128f501997b60fad86647dff0b72e41",
+          "start_s": 45,
+          "duration_s": 20,
+          "speed_relative_to_source": 1,
+          "label": "警局实验｜四机第三人称 2×2｜原片 00:45–01:05 · 3×"
+        },
+        {
+          "source": "archive/gpt6-semantic-swarm-3x.mp4",
+          "source_sha256": "a78221b6409d5f740a2e6204bd9205a0eadcc2772a6183280691ebf3ee7d54e4",
+          "start_s": 155,
+          "duration_s": 20,
+          "speed_relative_to_source": 1,
+          "label": "警局实验｜共享地图与任务关系｜原片 02:35–02:55 · 3×"
+        }
+      ],
+      "caveat": "Two selected intervals of the same archived GPT-6 Astra medium semantic-observation police run (738.2 s); 2x2 cameras come first. Not the current Qwen validation run."
+    },
+    "factory_order_change_highlights_40s": {
+      "file": "factory_order_change_highlights_40s.mp4",
+      "sha256": "83b4402e6971d9485c8716c0f8542ca243703c4e85ecac696e249b394592d347",
+      "video": {
+        "programs": [],
+        "streams": [
+          {
+            "width": 1600,
+            "height": 900,
+            "r_frame_rate": "25/1"
+          }
+        ],
+        "format": {
+          "duration": "40.000000",
+          "size": "2492944"
+        }
+      },
+      "segments": [
+        {
+          "source": "scenes/factory-order-change-5x.mp4",
+          "source_sha256": "e9c9630276455840c28c0d7a9cdc94ad450985d10020407f75222660242f5e7a",
+          "start_s": 81,
+          "duration_s": 12,
+          "speed_relative_to_source": 1,
+          "label": "工厂实验｜维修后订单从 1 套增至 2 套｜原片 01:21–01:33 · 5×"
+        },
+        {
+          "source": "scenes/factory-order-change-5x.mp4",
+          "source_sha256": "e9c9630276455840c28c0d7a9cdc94ad450985d10020407f75222660242f5e7a",
+          "start_s": 251,
+          "duration_s": 22,
+          "speed_relative_to_source": 1,
+          "label": "工厂实验｜补料、启动与两套交付｜原片 04:11–04:33 · 5×"
+        },
+        {
+          "source": "scenes/factory-order-change-5x.mp4",
+          "source_sha256": "e9c9630276455840c28c0d7a9cdc94ad450985d10020407f75222660242f5e7a",
+          "start_s": 279,
+          "duration_s": 6,
+          "speed_relative_to_source": 1,
+          "label": "工厂实验｜停机断电｜原片 04:39–04:45 · 5×"
+        }
+      ],
+      "caveat": "Three excerpts from the same opt-in order-change factory run (1427.546 s actual; 2/2 delivered). The cuts skip original video 01:33–04:11 and 04:33–04:39. The source was 5x actual speed. This is not continuous forty-second task completion."
+    }
+  }
+}
